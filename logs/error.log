@@ -1,0 +1,405 @@
+[19-Nov-2025 03:01:10 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/rahao/transmart-project/config/config.php on line 142
+[19-Nov-2025 07:39:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function query() in Command line code:3
+Stack trace:
+#0 {main}
+  thrown in Command line code on line 3
+[19-Nov-2025 07:42:51 UTC] Insert error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'created_at' in 'field list'
+[19-Nov-2025 07:45:08 UTC] Insert error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'created_at' in 'field list'
+[19-Nov-2025 07:46:32 UTC] Insert error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'created_at' in 'field list'
+[19-Nov-2025 07:46:32 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/rahao/transmart-project/api/cart.php:63
+Stack trace:
+#0 /home/rahao/transmart-project/api/cart.php(34): handleGetCart()
+#1 {main}
+  thrown in /home/rahao/transmart-project/api/cart.php on line 63
+[19-Nov-2025 07:47:08 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/rahao/transmart-project/api/cart.php:63
+Stack trace:
+#0 /home/rahao/transmart-project/api/cart.php(34): handleGetCart()
+#1 {main}
+  thrown in /home/rahao/transmart-project/api/cart.php on line 63
+[19-Nov-2025 07:47:14 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/rahao/transmart-project/api/cart.php:63
+Stack trace:
+#0 /home/rahao/transmart-project/api/cart.php(34): handleGetCart()
+#1 {main}
+  thrown in /home/rahao/transmart-project/api/cart.php on line 63
+[19-Nov-2025 07:47:54 UTC] Insert error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'created_at' in 'field list'
+[19-Nov-2025 07:48:38 UTC] Insert error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'created_at' in 'field list'
+[19-Nov-2025 07:48:57 UTC] Insert error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'created_at' in 'field list'
+[19-Nov-2025 07:49:10 UTC] Insert error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'created_at' in 'field list'
+[20-Nov-2025 10:31:46 UTC] Connection error: SQLSTATE[HY000] [2002] Connection refused
+[20-Nov-2025 10:31:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/rahao/transmart-project/config/database.php:36
+Stack trace:
+#0 /home/rahao/transmart-project/config/database.php(45): executeQuery()
+#1 /home/rahao/transmart-project/config/functions.php(63): getSingleResult()
+#2 /home/rahao/transmart-project/api/auth.php(49): TransmartFunctions::loginUser()
+#3 /home/rahao/transmart-project/api/auth.php(25): handleLogin()
+#4 {main}
+  thrown in /home/rahao/transmart-project/config/database.php on line 36
+[20-Nov-2025 10:32:22 UTC] Connection error: SQLSTATE[HY000] [2002] Connection refused
+[20-Nov-2025 10:32:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/rahao/transmart-project/config/database.php:36
+Stack trace:
+#0 /home/rahao/transmart-project/config/database.php(45): executeQuery()
+#1 /home/rahao/transmart-project/config/functions.php(31): getSingleResult()
+#2 /home/rahao/transmart-project/api/auth.php(77): TransmartFunctions::registerUser()
+#3 /home/rahao/transmart-project/api/auth.php(29): handleRegister()
+#4 {main}
+  thrown in /home/rahao/transmart-project/config/database.php on line 36
+[20-Nov-2025 10:32:29 UTC] Connection error: SQLSTATE[HY000] [2002] Connection refused
+[20-Nov-2025 10:32:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/rahao/transmart-project/config/database.php:36
+Stack trace:
+#0 /home/rahao/transmart-project/config/database.php(45): executeQuery()
+#1 /home/rahao/transmart-project/config/functions.php(63): getSingleResult()
+#2 /home/rahao/transmart-project/api/auth.php(49): TransmartFunctions::loginUser()
+#3 /home/rahao/transmart-project/api/auth.php(25): handleLogin()
+#4 {main}
+  thrown in /home/rahao/transmart-project/config/database.php on line 36
+[20-Nov-2025 10:32:40 UTC] Connection error: SQLSTATE[HY000] [2002] Connection refused
+[20-Nov-2025 10:32:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/rahao/transmart-project/config/database.php:36
+Stack trace:
+#0 /home/rahao/transmart-project/config/database.php(45): executeQuery()
+#1 /home/rahao/transmart-project/config/functions.php(63): getSingleResult()
+#2 /home/rahao/transmart-project/api/auth.php(49): TransmartFunctions::loginUser()
+#3 /home/rahao/transmart-project/api/auth.php(25): handleLogin()
+#4 {main}
+  thrown in /home/rahao/transmart-project/config/database.php on line 36
+[20-Nov-2025 10:32:42 UTC] Connection error: SQLSTATE[HY000] [2002] Connection refused
+[20-Nov-2025 10:32:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/rahao/transmart-project/config/database.php:36
+Stack trace:
+#0 /home/rahao/transmart-project/config/database.php(45): executeQuery()
+#1 /home/rahao/transmart-project/config/functions.php(63): getSingleResult()
+#2 /home/rahao/transmart-project/api/auth.php(49): TransmartFunctions::loginUser()
+#3 /home/rahao/transmart-project/api/auth.php(25): handleLogin()
+#4 {main}
+  thrown in /home/rahao/transmart-project/config/database.php on line 36
+[20-Nov-2025 10:32:43 UTC] Connection error: SQLSTATE[HY000] [2002] Connection refused
+[20-Nov-2025 10:32:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/rahao/transmart-project/config/database.php:36
+Stack trace:
+#0 /home/rahao/transmart-project/config/database.php(45): executeQuery()
+#1 /home/rahao/transmart-project/config/functions.php(63): getSingleResult()
+#2 /home/rahao/transmart-project/api/auth.php(49): TransmartFunctions::loginUser()
+#3 /home/rahao/transmart-project/api/auth.php(25): handleLogin()
+#4 {main}
+  thrown in /home/rahao/transmart-project/config/database.php on line 36
+[20-Nov-2025 10:53:35 UTC] PHP Warning:  Undefined global variable $functions in Command line code on line 1
+[20-Nov-2025 10:53:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getCart() on null in Command line code:1
+Stack trace:
+#0 {main}
+  thrown in Command line code on line 1
+[20-Nov-2025 11:06:59 UTC] handleGetCart called with user_id: 38
+[20-Nov-2025 11:06:59 UTC] Session ID: n8bhlbfe29n19ptc956bot17it
+[20-Nov-2025 11:06:59 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[20-Nov-2025 11:07:00 UTC] handleGetCart called with user_id: 38
+[20-Nov-2025 11:07:00 UTC] Session ID: n8bhlbfe29n19ptc956bot17it
+[20-Nov-2025 11:07:00 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[20-Nov-2025 11:07:08 UTC] handleGetCart called with user_id: 38
+[20-Nov-2025 11:07:08 UTC] Session ID: n8bhlbfe29n19ptc956bot17it
+[20-Nov-2025 11:07:08 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[20-Nov-2025 11:07:12 UTC] handleGetCart called with user_id: 38
+[20-Nov-2025 11:07:12 UTC] Session ID: n8bhlbfe29n19ptc956bot17it
+[20-Nov-2025 11:07:12 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[20-Nov-2025 11:07:20 UTC] handleGetCart called with user_id: 38
+[20-Nov-2025 11:07:20 UTC] Session ID: n8bhlbfe29n19ptc956bot17it
+[20-Nov-2025 11:07:20 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[20-Nov-2025 12:29:39 UTC] handleGetCart called with user_id: 39
+[20-Nov-2025 12:29:39 UTC] Session ID: sl5k7736pseja6psh8fp92vvfc
+[20-Nov-2025 12:29:39 UTC] Cart items returned: []
+[20-Nov-2025 12:29:44 UTC] handleGetCart called with user_id: 39
+[20-Nov-2025 12:29:44 UTC] Session ID: sl5k7736pseja6psh8fp92vvfc
+[20-Nov-2025 12:29:44 UTC] Cart items returned: []
+[20-Nov-2025 12:29:47 UTC] handleGetCart called with user_id: 39
+[20-Nov-2025 12:29:47 UTC] Session ID: sl5k7736pseja6psh8fp92vvfc
+[20-Nov-2025 12:29:47 UTC] Cart items returned: []
+[20-Nov-2025 12:29:48 UTC] handleGetCart called with user_id: 39
+[20-Nov-2025 12:29:48 UTC] Session ID: sl5k7736pseja6psh8fp92vvfc
+[20-Nov-2025 12:29:48 UTC] Cart items returned: []
+[20-Nov-2025 12:29:52 UTC] handleGetCart called with user_id: 39
+[20-Nov-2025 12:29:52 UTC] Session ID: sl5k7736pseja6psh8fp92vvfc
+[20-Nov-2025 12:29:52 UTC] Cart items returned: []
+[20-Nov-2025 12:29:55 UTC] handleGetCart called with user_id: 39
+[20-Nov-2025 12:29:55 UTC] Session ID: sl5k7736pseja6psh8fp92vvfc
+[20-Nov-2025 12:29:55 UTC] Cart items returned: []
+[20-Nov-2025 12:29:56 UTC] handleGetCart called with user_id: 39
+[20-Nov-2025 12:29:56 UTC] Session ID: sl5k7736pseja6psh8fp92vvfc
+[20-Nov-2025 12:29:56 UTC] Cart items returned: []
+[20-Nov-2025 12:29:58 UTC] handleGetCart called with user_id: 39
+[20-Nov-2025 12:29:58 UTC] Session ID: sl5k7736pseja6psh8fp92vvfc
+[20-Nov-2025 12:29:58 UTC] Cart items returned: []
+[20-Nov-2025 12:34:11 UTC] handleGetCart called with user_id: 40
+[20-Nov-2025 12:34:11 UTC] Session ID: boumqqo9qhghh96fedc40kf57q
+[20-Nov-2025 12:34:11 UTC] Cart items returned: []
+[20-Nov-2025 12:34:18 UTC] handleGetCart called with user_id: 40
+[20-Nov-2025 12:34:18 UTC] Session ID: boumqqo9qhghh96fedc40kf57q
+[20-Nov-2025 12:34:18 UTC] Cart items returned: []
+[20-Nov-2025 12:34:29 UTC] handleGetCart called with user_id: 40
+[20-Nov-2025 12:34:29 UTC] Session ID: boumqqo9qhghh96fedc40kf57q
+[20-Nov-2025 12:34:29 UTC] Cart items returned: []
+[20-Nov-2025 12:34:33 UTC] handleGetCart called with user_id: 40
+[20-Nov-2025 12:34:33 UTC] Session ID: boumqqo9qhghh96fedc40kf57q
+[20-Nov-2025 12:34:33 UTC] Cart items returned: []
+[20-Nov-2025 12:34:43 UTC] handleGetCart called with user_id: 40
+[20-Nov-2025 12:34:43 UTC] Session ID: boumqqo9qhghh96fedc40kf57q
+[20-Nov-2025 12:34:43 UTC] Cart items returned: []
+[20-Nov-2025 12:35:01 UTC] handleGetCart called with user_id: 40
+[20-Nov-2025 12:35:01 UTC] Session ID: boumqqo9qhghh96fedc40kf57q
+[20-Nov-2025 12:35:01 UTC] Cart items returned: [{"id":16,"user_id":40,"product_id":11,"quantity":1,"added_at":"2025-11-20 12:34:54","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15},{"id":17,"user_id":40,"product_id":12,"quantity":1,"added_at":"2025-11-20 12:34:55","name":"Smart Watch Series 8","price":"2499000.00","image":"smartwatch.jpg","stock":8}]
+[20-Nov-2025 12:35:04 UTC] handleGetCart called with user_id: 40
+[20-Nov-2025 12:35:04 UTC] Session ID: boumqqo9qhghh96fedc40kf57q
+[20-Nov-2025 12:35:04 UTC] Cart items returned: [{"id":16,"user_id":40,"product_id":11,"quantity":1,"added_at":"2025-11-20 12:34:54","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15},{"id":17,"user_id":40,"product_id":12,"quantity":1,"added_at":"2025-11-20 12:34:55","name":"Smart Watch Series 8","price":"2499000.00","image":"smartwatch.jpg","stock":8}]
+[20-Nov-2025 12:35:16 UTC] handleGetCart called with user_id: 40
+[20-Nov-2025 12:35:16 UTC] Session ID: boumqqo9qhghh96fedc40kf57q
+[20-Nov-2025 12:35:16 UTC] Cart items returned: [{"id":16,"user_id":40,"product_id":11,"quantity":1,"added_at":"2025-11-20 12:34:54","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15},{"id":17,"user_id":40,"product_id":12,"quantity":1,"added_at":"2025-11-20 12:34:55","name":"Smart Watch Series 8","price":"2499000.00","image":"smartwatch.jpg","stock":8}]
+[20-Nov-2025 12:35:28 UTC] handleGetCart called with user_id: 40
+[20-Nov-2025 12:35:28 UTC] Session ID: boumqqo9qhghh96fedc40kf57q
+[20-Nov-2025 12:35:28 UTC] Cart items returned: [{"id":16,"user_id":40,"product_id":11,"quantity":1,"added_at":"2025-11-20 12:34:54","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15},{"id":17,"user_id":40,"product_id":12,"quantity":1,"added_at":"2025-11-20 12:34:55","name":"Smart Watch Series 8","price":"2499000.00","image":"smartwatch.jpg","stock":8}]
+[20-Nov-2025 12:35:52 UTC] handleGetCart called with user_id: 2
+[20-Nov-2025 12:35:52 UTC] Session ID: caj70a7v787506e8ouh32g0ej6
+[20-Nov-2025 12:35:52 UTC] Cart items returned: []
+[20-Nov-2025 12:36:09 UTC] handleGetCart called with user_id: 2
+[20-Nov-2025 12:36:09 UTC] Session ID: caj70a7v787506e8ouh32g0ej6
+[20-Nov-2025 12:36:09 UTC] Cart items returned: []
+[20-Nov-2025 12:36:14 UTC] handleGetCart called with user_id: 2
+[20-Nov-2025 12:36:14 UTC] Session ID: caj70a7v787506e8ouh32g0ej6
+[20-Nov-2025 12:36:14 UTC] Cart items returned: []
+[20-Nov-2025 12:36:40 UTC] handleGetCart called with user_id: 2
+[20-Nov-2025 12:36:40 UTC] Session ID: caj70a7v787506e8ouh32g0ej6
+[20-Nov-2025 12:36:40 UTC] Cart items returned: []
+[20-Nov-2025 12:36:42 UTC] handleGetCart called with user_id: 2
+[20-Nov-2025 12:36:42 UTC] Session ID: caj70a7v787506e8ouh32g0ej6
+[20-Nov-2025 12:36:42 UTC] Cart items returned: []
+[20-Nov-2025 12:37:00 UTC] handleGetCart called with user_id: 2
+[20-Nov-2025 12:37:00 UTC] Session ID: caj70a7v787506e8ouh32g0ej6
+[20-Nov-2025 12:37:00 UTC] Cart items returned: []
+[20-Nov-2025 12:37:01 UTC] handleGetCart called with user_id: 2
+[20-Nov-2025 12:37:01 UTC] Session ID: caj70a7v787506e8ouh32g0ej6
+[20-Nov-2025 12:37:01 UTC] Cart items returned: []
+[20-Nov-2025 12:37:10 UTC] handleGetCart called with user_id: 40
+[20-Nov-2025 12:37:10 UTC] Session ID: 20360u06o7b91u1rrln0iqk3ac
+[20-Nov-2025 12:37:10 UTC] Cart items returned: [{"id":16,"user_id":40,"product_id":11,"quantity":1,"added_at":"2025-11-20 12:34:54","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15},{"id":17,"user_id":40,"product_id":12,"quantity":1,"added_at":"2025-11-20 12:34:55","name":"Smart Watch Series 8","price":"2499000.00","image":"smartwatch.jpg","stock":8}]
+[20-Nov-2025 12:38:19 UTC] handleGetCart called with user_id: 1
+[20-Nov-2025 12:38:19 UTC] Session ID: vdcsjhv5nk0apdscd5avhe6isl
+[20-Nov-2025 12:38:19 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[20-Nov-2025 12:38:45 UTC] handleGetCart called with user_id: 1
+[20-Nov-2025 12:38:45 UTC] Session ID: vdcsjhv5nk0apdscd5avhe6isl
+[20-Nov-2025 12:38:45 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[20-Nov-2025 12:38:53 UTC] handleGetCart called with user_id: 1
+[20-Nov-2025 12:38:53 UTC] Session ID: vdcsjhv5nk0apdscd5avhe6isl
+[20-Nov-2025 12:38:53 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[20-Nov-2025 12:39:09 UTC] handleGetCart called with user_id: 1
+[20-Nov-2025 12:39:09 UTC] Session ID: vdcsjhv5nk0apdscd5avhe6isl
+[20-Nov-2025 12:39:09 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[20-Nov-2025 12:39:24 UTC] handleGetCart called with user_id: 1
+[20-Nov-2025 12:39:24 UTC] Session ID: vdcsjhv5nk0apdscd5avhe6isl
+[20-Nov-2025 12:39:24 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[20-Nov-2025 12:39:43 UTC] handleGetCart called with user_id: 1
+[20-Nov-2025 12:39:43 UTC] Session ID: vdcsjhv5nk0apdscd5avhe6isl
+[20-Nov-2025 12:39:43 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[20-Nov-2025 12:39:52 UTC] handleGetCart called with user_id: 2
+[20-Nov-2025 12:39:52 UTC] Session ID: caj70a7v787506e8ouh32g0ej6
+[20-Nov-2025 12:39:52 UTC] Cart items returned: []
+[20-Nov-2025 12:39:59 UTC] handleGetCart called with user_id: 2
+[20-Nov-2025 12:39:59 UTC] Session ID: caj70a7v787506e8ouh32g0ej6
+[20-Nov-2025 12:39:59 UTC] Cart items returned: []
+[20-Nov-2025 12:40:01 UTC] handleGetCart called with user_id: 2
+[20-Nov-2025 12:40:01 UTC] Session ID: caj70a7v787506e8ouh32g0ej6
+[20-Nov-2025 12:40:01 UTC] Cart items returned: []
+[21-Nov-2025 11:31:02 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:31:02 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:31:02 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:31:04 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:31:04 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:31:04 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:31:10 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:31:10 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:31:10 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:31:11 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:31:11 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:31:11 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:31:12 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:31:12 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:31:12 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:31:18 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:31:18 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:31:18 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:31:19 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:31:19 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:31:19 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:31:20 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:31:20 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:31:20 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:31:21 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:31:21 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:31:21 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:39:35 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:39:35 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:39:35 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:39:37 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:39:37 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:39:37 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:39:40 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:39:40 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:39:40 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:39:51 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:39:51 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:39:51 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:39:53 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:39:53 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:39:53 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:39:59 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:39:59 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:39:59 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:40:07 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:40:07 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:40:07 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:40:11 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:40:11 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:40:11 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:40:17 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:40:17 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:40:17 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:40:17 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:40:17 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:40:17 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:40:18 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:40:18 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:40:18 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[21-Nov-2025 11:40:18 UTC] handleGetCart called with user_id: 38
+[21-Nov-2025 11:40:18 UTC] Session ID: 4ribo6s5uhobh6t09ab3fq3mht
+[21-Nov-2025 11:40:18 UTC] Cart items returned: [{"id":13,"user_id":38,"product_id":11,"quantity":10,"added_at":"2025-11-20 10:47:37","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[22-Nov-2025 01:04:42 UTC] handleGetCart called with user_id: 1
+[22-Nov-2025 01:04:42 UTC] Session ID: atiggiliodrmfg5136as12serq
+[22-Nov-2025 01:04:42 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[22-Nov-2025 01:05:10 UTC] handleGetCart called with user_id: 1
+[22-Nov-2025 01:05:10 UTC] Session ID: atiggiliodrmfg5136as12serq
+[22-Nov-2025 01:05:10 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[22-Nov-2025 01:05:20 UTC] handleGetCart called with user_id: 1
+[22-Nov-2025 01:05:20 UTC] Session ID: atiggiliodrmfg5136as12serq
+[22-Nov-2025 01:05:20 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[22-Nov-2025 01:05:53 UTC] handleGetCart called with user_id: 1
+[22-Nov-2025 01:05:53 UTC] Session ID: atiggiliodrmfg5136as12serq
+[22-Nov-2025 01:05:53 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[22-Nov-2025 01:06:10 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:06:10 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:06:10 UTC] Cart items returned: []
+[22-Nov-2025 01:06:15 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:06:15 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:06:15 UTC] Cart items returned: []
+[22-Nov-2025 01:06:28 UTC] handleGetCart called with user_id: 1
+[22-Nov-2025 01:06:28 UTC] Session ID: hpnob6016k9a14v183vuurr6lr
+[22-Nov-2025 01:06:28 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[22-Nov-2025 01:07:02 UTC] handleGetCart called with user_id: 1
+[22-Nov-2025 01:07:02 UTC] Session ID: atiggiliodrmfg5136as12serq
+[22-Nov-2025 01:07:02 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[22-Nov-2025 01:07:38 UTC] handleGetCart called with user_id: 1
+[22-Nov-2025 01:07:38 UTC] Session ID: hpnob6016k9a14v183vuurr6lr
+[22-Nov-2025 01:07:38 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[22-Nov-2025 01:07:39 UTC] handleGetCart called with user_id: 1
+[22-Nov-2025 01:07:39 UTC] Session ID: atiggiliodrmfg5136as12serq
+[22-Nov-2025 01:07:39 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[22-Nov-2025 01:07:40 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:07:40 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:07:40 UTC] Cart items returned: []
+[22-Nov-2025 01:07:43 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:07:43 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:07:43 UTC] Cart items returned: []
+[22-Nov-2025 01:07:46 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:07:46 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:07:46 UTC] Cart items returned: []
+[22-Nov-2025 01:07:53 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:07:53 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:07:53 UTC] Cart items returned: []
+[22-Nov-2025 01:07:56 UTC] handleGetCart called with user_id: 1
+[22-Nov-2025 01:07:56 UTC] Session ID: hpnob6016k9a14v183vuurr6lr
+[22-Nov-2025 01:07:56 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[22-Nov-2025 01:08:01 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:08:01 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:08:01 UTC] Cart items returned: []
+[22-Nov-2025 01:08:07 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:08:07 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:08:07 UTC] Cart items returned: []
+[22-Nov-2025 01:08:09 UTC] handleGetCart called with user_id: 1
+[22-Nov-2025 01:08:09 UTC] Session ID: hpnob6016k9a14v183vuurr6lr
+[22-Nov-2025 01:08:09 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[22-Nov-2025 01:08:20 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:08:20 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:08:20 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:08:33 UTC] handleGetCart called with user_id: 1
+[22-Nov-2025 01:08:33 UTC] Session ID: hpnob6016k9a14v183vuurr6lr
+[22-Nov-2025 01:08:33 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[22-Nov-2025 01:09:19 UTC] handleGetCart called with user_id: 1
+[22-Nov-2025 01:09:19 UTC] Session ID: hpnob6016k9a14v183vuurr6lr
+[22-Nov-2025 01:09:19 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[22-Nov-2025 01:09:25 UTC] handleGetCart called with user_id: 1
+[22-Nov-2025 01:09:25 UTC] Session ID: hpnob6016k9a14v183vuurr6lr
+[22-Nov-2025 01:09:25 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[22-Nov-2025 01:09:29 UTC] handleGetCart called with user_id: 1
+[22-Nov-2025 01:09:29 UTC] Session ID: hpnob6016k9a14v183vuurr6lr
+[22-Nov-2025 01:09:29 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[22-Nov-2025 01:10:36 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:10:36 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:10:36 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:11:43 UTC] handleGetCart called with user_id: 2
+[22-Nov-2025 01:11:43 UTC] Session ID: hpnob6016k9a14v183vuurr6lr
+[22-Nov-2025 01:11:43 UTC] Cart items returned: []
+[22-Nov-2025 01:11:52 UTC] handleGetCart called with user_id: 2
+[22-Nov-2025 01:11:52 UTC] Session ID: hpnob6016k9a14v183vuurr6lr
+[22-Nov-2025 01:11:52 UTC] Cart items returned: []
+[22-Nov-2025 01:12:02 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:12:02 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:12:02 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:12:03 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:12:03 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:12:03 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:12:18 UTC] handleGetCart called with user_id: 2
+[22-Nov-2025 01:12:18 UTC] Session ID: hpnob6016k9a14v183vuurr6lr
+[22-Nov-2025 01:12:18 UTC] Cart items returned: []
+[22-Nov-2025 01:12:43 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:12:43 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:12:43 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:12:54 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:12:54 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:12:54 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:13:00 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:13:00 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:13:00 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:13:02 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:13:02 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:13:02 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:13:05 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:13:05 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:13:05 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:13:11 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:13:11 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:13:11 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:13:16 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:13:16 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:13:16 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:13:20 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:13:20 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:13:20 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:13:25 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:13:25 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:13:25 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:13:30 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:13:30 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:13:30 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:13:37 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:13:37 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:13:37 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:13:43 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:13:43 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:13:43 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18}]
+[22-Nov-2025 01:13:51 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:13:51 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:13:51 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18},{"id":19,"user_id":39,"product_id":26,"quantity":1,"added_at":"2025-11-22 01:13:48","name":"Tas Ransel Travel Premium","price":"549000.00","image":"backpack.jpg","stock":12}]
+[22-Nov-2025 01:15:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getDBConnection() in Command line code:5
+Stack trace:
+#0 {main}
+  thrown in Command line code on line 5
+[22-Nov-2025 01:16:14 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:16:14 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:16:14 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18},{"id":19,"user_id":39,"product_id":26,"quantity":1,"added_at":"2025-11-22 01:13:48","name":"Tas Ransel Travel Premium","price":"549000.00","image":"backpack.jpg","stock":12}]
+[22-Nov-2025 01:16:16 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:16:16 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:16:16 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18},{"id":19,"user_id":39,"product_id":26,"quantity":1,"added_at":"2025-11-22 01:13:48","name":"Tas Ransel Travel Premium","price":"549000.00","image":"backpack.jpg","stock":12}]
+[22-Nov-2025 01:17:30 UTC] handleGetCart called with user_id: 39
+[22-Nov-2025 01:17:30 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
+[22-Nov-2025 01:17:30 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18},{"id":19,"user_id":39,"product_id":26,"quantity":1,"added_at":"2025-11-22 01:13:48","name":"Tas Ransel Travel Premium","price":"549000.00","image":"backpack.jpg","stock":12}]

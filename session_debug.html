@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Session Debug</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .box { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Session Debug</h1>
+    
+    <div class="box">
+        <h2>Current User (from localStorage)</h2>
+        <p>User ID: <span id="userId">-</span></p>
+        <p>User Name: <span id="userName">-</span></p>
+        <p>User Email: <span id="userEmail">-</span></p>
+    </div>
+    
+    <div class="box">
+        <h2>Actions</h2>
+        <button onclick="clearAllAndLogout()">🗑️ Clear LocalStorage & Logout</button>
+        <button onclick="goToLogin()">🔐 Go to Login</button>
+        <button onclick="goToCart()">🛒 Go to Cart</button>
+        <button onclick="goToCheckout()">✅ Go to Checkout</button>
+        <button onclick="location.reload()">🔄 Reload Page</button>
+    </div>
+    
+    <div class="box">
+        <h2>Debug Info</h2>
+        <pre id="debugInfo"></pre>
+    </div>
+    
+    <script>
+        function updateDisplay() {
+            const userId = localStorage.getItem('user_id');
+            const userName = localStorage.getItem('user_name');
+            const userEmail = localStorage.getItem('user_email');
+            
+            document.getElementById('userId').textContent = userId || '(none)';
+            document.getElementById('userName').textContent = userName || '(none)';
+            document.getElementById('userEmail').textContent = userEmail || '(none)';
+            
+            const debugInfo = {
+                localStorage_keys: Object.keys(localStorage),
+                localStorage_content: {
+                    user_id: localStorage.getItem('user_id'),
+                    user_name: localStorage.getItem('user_name'),
+                    user_email: localStorage.getItem('user_email'),
+                    user_role: localStorage.getItem('user_role'),
+                },
+                cookies: document.cookie
+            };
+            
+            document.getElementById('debugInfo').textContent = JSON.stringify(debugInfo, null, 2);
+        }
+        
+        function clearAllAndLogout() {
+            localStorage.clear();
+            document.cookie = 'PHPSESSID=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+            alert('LocalStorage cleared and session cookie removed!');
+            updateDisplay();
+            setTimeout(() => {
+                window.location.href = '/pages/auth/login.html';
+            }, 500);
+        }
+        
+        function goToLogin() {
+            window.location.href = '/pages/auth/login.html';
+        }
+        
+        function goToCart() {
+            window.location.href = '/pages/cart.html';
+        }
+        
+        function goToCheckout() {
+            window.location.href = '/pages/checkout.html';
+        }
+        
+        updateDisplay();
+    </script>
+</body>
+</html>

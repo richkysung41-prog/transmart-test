@@ -1,0 +1,53 @@
+/* assets/css/style.css */
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+
+.swiper-pagination-bullet-active { 
+    background-color: #E30613 !important; 
+}
+
+.transmart-red { 
+    color: #E30613; 
+}
+
+.bg-transmart-red { 
+    background-color: #E30613; 
+}
+
+.border-transmart-red { 
+    border-color: #E30613; 
+}
+
+.hover\:bg-transmart-red:hover { 
+    background-color: #E30613; 
+}
+
+.focus\:ring-transmart-red:focus { 
+    --tw-ring-color: #E30613; 
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Custom scrollbar for category navigation */
+.overflow-x-auto::-webkit-scrollbar {
+    height: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}

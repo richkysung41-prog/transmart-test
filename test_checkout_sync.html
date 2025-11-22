@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Checkout Sync</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .section { background: white; padding: 20px; margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h2 { border-bottom: 2px solid #e74c3c; padding-bottom: 10px; }
+        button { padding: 10px 15px; margin: 5px; cursor: pointer; border: none; border-radius: 4px; background: #3498db; color: white; font-weight: bold; }
+        button:hover { background: #2980b9; }
+        button.danger { background: #e74c3c; }
+        button.danger:hover { background: #c0392b; }
+        .status { padding: 10px; background: #ecf0f1; border-left: 4px solid #3498db; margin: 10px 0; border-radius: 4px; }
+        .log { background: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 4px; font-family: monospace; font-size: 12px; max-height: 300px; overflow-y: auto; margin: 10px 0; }
+        .log div { margin: 2px 0; }
+        .log .info { color: #3498db; }
+        .log .success { color: #2ecc71; }
+        .log .error { color: #e74c3c; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Test Checkout Sync</h1>
+        
+        <div class="section">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Open <strong>Cart Page</strong> in the left panel (click "Open Cart")</li>
+                <li>Add/modify products and change quantity using "-" button</li>
+                <li>Watch the <strong>Checkout Page</strong> in the right panel update automatically</li>
+                <li>Check console logs below to see sync events</li>
+            </ol>
+        </div>
+        
+        <div class="grid">
+            <!-- Left: Cart Page -->
+            <div>
+                <div class="section">
+                    <h2>🛒 Cart Page</h2>
+                    <button onclick="openCart()">🔗 Open Cart Page</button>
+                    <div class="status">
+                        <strong>Status:</strong> <span id="cartStatus">Waiting to open...</span>
+                    </div>
+                    <div class="log" id="cartLog"></div>
+                </div>
+            </div>
+            
+            <!-- Right: Checkout Page -->
+            <div>
+                <div class="section">
+                    <h2>✅ Checkout Page</h2>
+                    <button onclick="openCheckout()">🔗 Open Checkout Page</button>
+                    <div class="status">
+                        <strong>Status:</strong> <span id="checkoutStatus">Waiting to open...</span>
+                    </div>
+                    <div class="log" id="checkoutLog"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📊 LocalStorage Monitor</h2>
+            <button onclick="monitorStorage()">📍 Start Monitoring</button>
+            <button onclick="clearStorage()" class="danger">🗑️ Clear All</button>
+            <div class="log" id="storageLog"></div>
+        </div>
+    </div>
+    
+    <script>
+        let cartWindow = null;
+        let checkoutWindow = null;
+        let storageCheckInterval = null;
+        let lastStorageState = {};
+        
+        function log(element, message, type = 'info') {
+            const log = document.getElementById(element);
+            const time = new Date().toLocaleTimeString();
+            const div = document.createElement('div');
+            div.className = type;
+            div.textContent = `[${time}] ${message}`;
+            log.appendChild(div);
+            log.scrollTop = log.scrollHeight;
+        }
+        
+        function openCart() {
+            cartWindow = window.open('/pages/cart.html', 'cart_window', 'width=600,height=800,left=0,top=0');
+            document.getElementById('cartStatus').textContent = 'Opened in new window';
+            log('cartLog', 'Cart page opened', 'info');
+        }
+        
+        function openCheckout() {
+            checkoutWindow = window.open('/pages/checkout.html', 'checkout_window', 'width=600,height=800,right=0,top=0');
+            document.getElementById('checkoutStatus').textContent = 'Opened in new window';
+            log('checkoutLog', 'Checkout page opened', 'info');
+        }
+        
+        function monitorStorage() {
+            if (storageCheckInterval) {
+                clearInterval(storageCheckInterval);
+                return;
+            }
+            
+            log('storageLog', 'Starting localStorage monitoring...', 'info');
+            
+            storageCheckInterval = setInterval(function() {
+                const currentState = {
+                    cart_summary: localStorage.getItem('cart_summary'),
+                    transmart_cart_modified: localStorage.getItem('transmart_cart_modified'),
+                    user_id: localStorage.getItem('user_id'),
+                };
+                
+                if (JSON.stringify(currentState) !== JSON.stringify(lastStorageState)) {
+                    log('storageLog', 'Storage changed:', 'success');
+                    log('storageLog', 'cart_summary: ' + (currentState.cart_summary ? currentState.cart_summary.substring(0, 50) + '...' : '(empty)'), 'info');
+                    log('storageLog', 'transmart_cart_modified: ' + currentState.transmart_cart_modified, 'info');
+                    lastStorageState = currentState;
+                }
+            }, 500);
+        }
+        
+        function clearStorage() {
+            localStorage.clear();
+            log('storageLog', 'LocalStorage cleared!', 'error');
+        }
+        
+        // Auto-log page load
+        window.addEventListener('load', function() {
+            log('storageLog', 'Test page loaded', 'success');
+        });
+    </script>
+</body>
+</html>

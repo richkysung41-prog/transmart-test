@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Wireless Headphones - Detail Produk</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.14.1/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Header Navigation -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-8">
+                    <button onclick="window.history.back()" class="lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                        <i class="fas fa-arrow-left text-gray-700"></i>
+                    </button>
+                    <a href="../../index.html" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg"></div>
+                        <span class="text-xl font-bold text-gray-900">Transmart</span>
+                    </a>
+                    <nav class="hidden lg:flex space-x-6">
+                        <a href="../../index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Beranda</a>
+                        <a href="../catalog.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Produk</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Kategori</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Promo</a>
+                    </nav>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:flex items-center bg-gray-100 rounded-lg px-4 py-2 w-64">
+                        <i class="fas fa-search text-gray-400 mr-2"></i>
+                        <input type="text" placeholder="Cari produk..." class="bg-transparent outline-none text-sm w-full">
+                    </div>
+                    <button class="p-2 hover:bg-gray-100 rounded-lg transition-colors relative">
+                        <i class="fas fa-heart text-gray-700"></i>
+                        <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">3</span>
+                    </button>
+                    <a href="../cart.html" class="p-2 hover:bg-gray-100 rounded-lg transition-colors relative">
+                        <i class="fas fa-shopping-cart text-gray-700"></i>
+                        <span class="absolute -top-1 -right-1 bg-blue-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">2</span>
+                    </a>
+                    <button class="hidden sm:flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-user"></i>
+                        <span>Masuk</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <nav class="flex text-sm text-gray-600">
+            <a href="../../index.html" class="hover:text-blue-600 transition-colors">Beranda</a>
+            <i class="fas fa-chevron-right mx-2 text-xs mt-1"></i>
+            <a href="../catalog.html" class="hover:text-blue-600 transition-colors">Elektronik</a>
+            <i class="fas fa-chevron-right mx-2 text-xs mt-1"></i>
+            <a href="../catalog.html" class="hover:text-blue-600 transition-colors">Audio</a>
+            <i class="fas fa-chevron-right mx-2 text-xs mt-1"></i>
+            <span class="text-gray-900 font-medium">Premium Wireless Headphones</span>
+        </nav>
+    </div>
+
+    <!-- Main Product Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12" x-data="{ 
+            mainImage: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop',
+            selectedColor: 'black',
+            selectedModel: 'standard',
+            quantity: 1,
+            isFavorite: false
+         }">
+            <!-- Product Images -->
+            <div class="space-y-4">
+                <!-- Main Image -->
+                <div class="aspect-square bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+                    <img :src="mainImage" alt="Product" class="w-full h-full object-cover">
+                </div>
+                
+                <!-- Thumbnail Images -->
+                <div class="grid grid-cols-4 gap-3">
+                    <button @click="mainImage = 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop'" class="aspect-square bg-white rounded-lg overflow-hidden border-2 border-blue-600 hover:opacity-80 transition-opacity">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200&h=200&fit=crop" alt="Thumbnail" class="w-full h-full object-cover">
+                    </button>
+                    <button @click="mainImage = 'https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop'" class="aspect-square bg-white rounded-lg overflow-hidden border-2 border-gray-200 hover:border-blue-600 transition-colors">
+                        <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=200&h=200&fit=crop" alt="Thumbnail" class="w-full h-full object-cover">
+                    </button>
+                    <button @click="mainImage = 'https://images.unsplash.com/photo-1545127398-14699f92334b?w=800&h=800&fit=crop'" class="aspect-square bg-white rounded-lg overflow-hidden border-2 border-gray-200 hover:border-blue-600 transition-colors">
+                        <img src="https://images.unsplash.com/photo-1545127398-14699f92334b?w=200&h=200&fit=crop" alt="Thumbnail" class="w-full h-full object-cover">
+                    </button>
+                    <button @click="mainImage = 'https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=800&h=800&fit=crop'" class="aspect-square bg-white rounded-lg overflow-hidden border-2 border-gray-200 hover:border-blue-600 transition-colors">
+                        <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=200&h=200&fit=crop" alt="Thumbnail" class="w-full h-full object-cover">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="space-y-6">
+                <!-- Product Title & Rating -->
+                <div>
+                    <div class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold mb-3">
+                        BEST SELLER
+                    </div>
+                    <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">Premium Wireless Headphones</h1>
+                    <p class="text-gray-600 mb-4">Active Noise Cancellation | 30H Battery Life | Premium Sound Quality</p>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-lg font-semibold text-gray-900">4.8</span>
+                        <span class="text-gray-400">|</span>
+                        <a href="#reviews" class="text-blue-600 hover:underline font-medium">328 ulasan</a>
+                        <span class="text-gray-400">|</span>
+                        <span class="text-gray-600 font-medium">1.2k+ terjual</span>
+                    </div>
+                </div>
+
+                <!-- Price -->
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 border border-blue-100">
+                    <div class="flex items-baseline space-x-3 mb-2">
+                        <span class="text-4xl font-bold text-gray-900">Rp 2.499.000</span>
+                        <span class="text-xl text-gray-500 line-through">Rp 3.299.000</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-red-500 text-white px-3 py-1 rounded-lg text-sm font-bold">HEMAT 24%</span>
+                        <span class="text-sm text-gray-600">Promo berakhir dalam <span class="font-semibold text-red-600">2 hari</span></span>
+                    </div>
+                </div>
+
+                <!-- Variants -->
+                <div class="space-y-5">
+                    <!-- Color Variant -->
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-3">Pilih Warna: <span class="text-blue-600" x-text="selectedColor === 'black' ? 'Midnight Black' : selectedColor === 'white' ? 'Pearl White' : selectedColor === 'blue' ? 'Ocean Blue' : 'Rose Gold'"></span></h3>
+                        <div class="flex space-x-3">
+                            <button @click="selectedColor = 'black'" class="group relative">
+                                <div class="w-12 h-12 bg-gray-900 rounded-xl border-3 border-blue-600 shadow-lg transition-transform hover:scale-110"></div>
+                                <div x-show="selectedColor === 'black'" class="absolute -bottom-1 -right-1 bg-blue-600 text-white rounded-full w-5 h-5 flex items-center justify-center">
+                                    <i class="fas fa-check text-xs"></i>
+                                </div>
+                            </button>
+                            <button @click="selectedColor = 'white'" class="group relative">
+                                <div class="w-12 h-12 bg-white rounded-xl border-2 border-gray-300 shadow-md transition-transform hover:scale-110 hover:border-blue-600"></div>
+                                <div x-show="selectedColor === 'white'" class="absolute -bottom-1 -right-1 bg-blue-600 text-white rounded-full w-5 h-5 flex items-center justify-center">
+                                    <i class="fas fa-check text-xs"></i>
+                                </div>
+                            </button>
+                            <button @click="selectedColor = 'blue'" class="group relative">
+                                <div class="w-12 h-12 bg-blue-600 rounded-xl border-2 border-gray-300 shadow-md transition-transform hover:scale-110 hover:border-blue-600"></div>
+                                <div x-show="selectedColor === 'blue'" class="absolute -bottom-1 -right-1 bg-blue-600 text-white rounded-full w-5 h-5 flex items-center justify-center">
+                                    <i class="fas fa-check text-xs"></i>
+                                </div>
+                            </button>
+                            <button @click="selectedColor = 'rose'" class="group relative">
+                                <div class="w-12 h-12 bg-rose-400 rounded-xl border-2 border-gray-300 shadow-md transition-transform hover:scale-110 hover:border-blue-600"></div>
+                                <div x-show="selectedColor === 'rose'" class="absolute -bottom-1 -right-1 bg-blue-600 text-white rounded-full w-5 h-5 flex items-center justify-center">
+                                    <i class="fas fa-check text-xs"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Size/Model Variant -->
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 mb-3">Model</h3>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button @click="selectedModel = 'standard'" :class="selectedModel === 'standard' ? 'border-2 border-blue-600 bg-blue-50 text-blue-600' : 'border-2 border-gray-300 bg-white text-gray-700 hover:border-blue-600 hover:bg-blue-50'" class="px-4 py-3 rounded-xl text-sm font-semibold transition-all">
+                                <div class="flex items-center justify-between">
+                                    <span>Standard</span>
+                                    <i x-show="selectedModel === 'standard'" class="fas fa-check"></i>
+                                </div>
+                                <div class="text-xs text-gray-600 mt-1">Rp 2.499.000</div>
+                            </button>
+                            <button @click="selectedModel = 'pro'" :class="selectedModel === 'pro' ? 'border-2 border-blue-600 bg-blue-50 text-blue-600' : 'border-2 border-gray-300 bg-white text-gray-700 hover:border-blue-600 hover:bg-blue-50'" class="px-4 py-3 rounded-xl text-sm font-semibold transition-all">
+                                <div class="flex items-center justify-between">
+                                    <span>Pro Max</span>
+                                    <i x-show="selectedModel === 'pro'" class="fas fa-check"></i>
+                                </div>
+                                <div class="text-xs text-gray-600 mt-1">Rp 3.299.000</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quantity & Actions -->
+                <div class="space-y-4 border-t border-gray-200 pt-6">
+                    <!-- Quantity -->
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            <span class="text-sm font-semibold text-gray-900">Jumlah:</span>
+                            <div class="flex items-center bg-white border-2 border-gray-300 rounded-xl overflow-hidden">
+                                <button @click="quantity > 1 ? quantity-- : quantity" class="px-4 py-2 text-gray-600 hover:bg-gray-100 transition-colors font-semibold">-</button>
+                                <span class="px-6 py-2 border-l border-r border-gray-300 font-semibold" x-text="quantity"></span>
+                                <button @click="quantity++" class="px-4 py-2 text-gray-600 hover:bg-gray-100 transition-colors font-semibold">+</button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                            <span class="text-sm text-green-600 font-semibold">Stok: 47 unit</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
+                        <button class="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 px-6 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                            <i class="fas fa-bolt mr-2"></i>Beli Sekarang
+                        </button>
+                        <button class="flex-1 border-2 border-blue-600 text-blue-600 py-4 px-6 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all">
+                            <i class="fas fa-shopping-cart mr-2"></i>+ Keranjang
+                        </button>
+                        <button @click="isFavorite = !isFavorite" :class="isFavorite ? 'bg-red-50 border-red-500 text-red-500' : 'border-gray-300 text-gray-400 hover:bg-red-50 hover:border-red-500'" class="px-5 py-4 border-2 rounded-xl transition-all group">
+                            <i :class="isFavorite ? 'fas fa-heart' : 'far fa-heart'" class="text-xl transition-colors"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Additional Info -->
+                <div class="bg-white rounded-2xl p-5 space-y-3 shadow-sm border border-gray-200">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-truck text-green-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900">Gratis Ongkir</div>
+                            <div class="text-sm text-gray-600">Untuk pembelian min. Rp 100.000</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-blue-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900">Garansi Resmi</div>
+                            <div class="text-sm text-gray-600">Garansi internasional 2 tahun</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-undo text-purple-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900">Mudah Return</div>
+                            <div class="text-sm text-gray-600">Return gratis dalam 14 hari</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Details Tabs -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8" x-data="{ activeTab: 'description' }">
+        <!-- Tab Navigation -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+            <nav class="flex border-b border-gray-200">
+                <button @click="activeTab = 'description'" 
+                        :class="activeTab === 'description' ? 'border-blue-600 text-blue-600 bg-blue-50' : 'border-transparent text-gray-600 hover:text-gray-900 hover:bg-gray-50'"
+                        class="flex-1 py-4 px-6 border-b-3 font-semibold text-sm sm:text-base transition-all">
+                    <i class="fas fa-align-left mr-2"></i>Deskripsi
+                </button>
+                <button @click="activeTab = 'specifications'" 
+                        :class="activeTab === 'specifications' ? 'border-blue-600 text-blue-600 bg-blue-50' : 'border-transparent text-gray-600 hover:text-gray-900 hover:bg-gray-50'"
+                        class="flex-1 py-4 px-6 border-b-3 font-semibold text-sm sm:text-base transition-all">
+                    <i class="fas fa-list-ul mr-2"></i>Spesifikasi
+                </button>
+                <button @click="activeTab = 'reviews'" 
+                        :class="activeTab === 'reviews' ? 'border-blue-600 text-blue-600 bg-blue-50' : 'border-transparent text-gray-600 hover:text-gray-900 hover:bg-gray-50'"
+                        class="flex-1 py-4 px-6 border-b-3 font-semibold text-sm sm:text-base transition-all">
+                    <i class="fas fa-star mr-2"></i>Ulasan (328)
+                </button>
+            </nav>
+
+            <!-- Tab Content -->
+            <div class="p-6 sm:p-8">
+                <!-- Description Tab -->
+                <div x-show="activeTab === 'description'" class="space-y-6">
+                    <div class="prose max-w-none">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Tentang Produk Ini</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Premium Wireless Headphones dirancang untuk memberikan pengalaman audio terbaik dengan teknologi Active Noise Cancellation (ANC) yang canggih. Nikmati musik favorit Anda tanpa gangguan dengan kualitas suara yang jernih dan bass yang dalam.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Dengan baterai yang tahan hingga 30 jam, headphone ini sempurna untuk perjalanan jauh atau sesi mendengarkan musik marathon. Desain ergonomis dengan bantalan telinga yang lembut memastikan kenyamanan maksimal bahkan untuk penggunaan berjam-jam.
+                        </p>
+                        
+                        <h4 class="text-xl font-bold text-gray-900 mt-6 mb-3">Fitur Unggulan:</h4>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700"><strong>Active Noise Cancellation:</strong> Teknologi ANC terbaru yang menghilangkan hingga 95% kebisingan eksternal</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700"><strong>Hi-Res Audio:</strong> Driver 40mm dengan respons frekuensi 20Hz-40kHz untuk kualitas suara studio</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700"><strong>Baterai Tahan Lama:</strong> Hingga 30 jam pemutaran dengan ANC aktif, 40 jam tanpa ANC</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700"><strong>Fast Charging:</strong> 10 menit pengisian untuk 5 jam pemutaran</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700"><strong>Multi-Device Pairing:</strong> Terhubung ke 2 perangkat secara bersamaan</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700"><strong>Premium Materials:</strong> Konstruksi aluminium dan kulit protein berkualitas tinggi</span>
+                            </li>
+                        </ul>
+
+                        <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-100">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3">Apa yang Anda Dapatkan:</h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-box text-blue-600"></i>
+                                    <span class="text-gray-700">1x Premium Wireless Headphones</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-box text-blue-600"></i>
+                                    <span class="text-gray-700">1x USB-C Charging Cable</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-box text-blue-600"></i>
+                                    <span class="text-gray-700">1x 3.5mm Audio Cable</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-box text-blue-600"></i>
+                                    <span class="text-gray-700">1x Premium Carrying Case</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-box text-blue-600"></i>
+                                    <span class="text-gray-700">1x User Manual</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-box text-blue-600"></i>
+                                    <span class="text-gray-700">2 Years Warranty Card</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specifications Tab -->
+                <div x-show="activeTab === 'specifications'" class="space-y-6">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Spesifikasi Teknis</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 rounded-xl p-6 space-y-4">
+                            <h4 class="font-bold text-lg text-gray-900 mb-4 flex items-center">
+                                <i class="fas fa-headphones text-blue-600 mr-2"></i>Audio
+                            </h4>
+                            <div class="flex justify-between py-3 border-b border-gray-200">
+                                <span class="text-gray-600 font-medium">Driver</span>
+                                <span class="text-gray-900 font-semibold">40mm Dynamic</span>
+                            </div>
+                            <div class="flex justify-between py-3 border-b border-gray-200">
+                                <span class="text-gray-600 font-medium">Frequency Response</span>
+                                <span class="text-gray-900 font-semibold">20Hz - 40kHz</span>
+                            </div>
+                            <div class="flex justify-between py-3 border-b border-gray-200">
+                                <span class="text-gray-600 font-medium">Impedance</span>
+                                <span class="text-gray-900 font-semibold">32 Ohm</span>
+                            </div>
+                            <div class="flex justify-between py-3">
+                                <span class="text-gray-600 font-medium">Sensitivity</span>
+                                <span class="text-gray-900 font-semibold">98 dB</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-xl p-6 space-y-4">
+                            <h4 class="font-bold text-lg text-gray-900 mb-4 flex items-center">
+                                <i class="fas fa-battery-full text-green-600 mr-2"></i>Baterai & Konektivitas
+                            </h4>
+                            <div class="flex justify-between py-3 border-b border-gray-200">
+                                <span class="text-gray-600 font-medium">Battery Life (ANC On)</span>
+                                <span class="text-gray-900 font-semibold">30 Hours</span>
+                            </div>
+                            <div class="flex justify-between py-3 border-b border-gray-200">
+                                <span class="text-gray-600 font-medium">Battery Life (ANC Off)</span>
+                                <span class="text-gray-900 font-semibold">40 Hours</span>
+                            </div>
+                            <div class="flex justify-between py-3 border-b border-gray-200">
+                                <span class="text-gray-600 font-medium">Charging Time</span>
+                                <span class="text-gray-900 font-semibold">2 Hours (USB-C)</span>
+                            </div>
+                            <div class="flex justify-between py-3">
+                                <span class="text-gray-600 font-medium">Bluetooth Version</span>
+                                <span class="text-gray-900 font-semibold">5.3</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-xl p-6 space-y-4">
+                            <h4 class="font-bold text-lg text-gray-900 mb-4 flex items-center">
+                                <i class="fas fa-ruler text-purple-600 mr-2"></i>Dimensi & Berat
+                            </h4>
+                            <div class="flex justify-between py-3 border-b border-gray-200">
+                                <span class="text-gray-600 font-medium">Dimensi (Folded)</span>
+                                <span class="text-gray-900 font-semibold">18 x 16 x 8 cm</span>
+                            </div>
+                            <div class="flex justify-between py-3 border-b border-gray-200">
+                                <span class="text-gray-600 font-medium">Berat</span>
+                                <span class="text-gray-900 font-semibold">285g</span>
+                            </div>
+                            <div class="flex justify-between py-3">
+                                <span class="text-gray-600 font-medium">Material</span>
+                                <span class="text-gray-900 font-semibold">Aluminum + Protein Leather</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-xl p-6 space-y-4">
+                            <h4 class="font-bold text-lg text-gray-900 mb-4 flex items-center">
+                                <i class="fas fa-cog text-orange-600 mr-2"></i>Fitur Lainnya
+                            </h4>
+                            <div class="flex justify-between py-3 border-b border-gray-200">
+                                <span class="text-gray-600 font-medium">ANC Level</span>
+                                <span class="text-gray-900 font-semibold">Up to -35dB</span>
+                            </div>
+                            <div class="flex justify-between py-3 border-b border-gray-200">
+                                <span class="text-gray-600 font-medium">Microphone</span>
+                                <span class="text-gray-900 font-semibold">Dual Beamforming</span>
+                            </div>
+                            <div class="flex justify-between py-3">
+                                <span class="text-gray-600 font-medium">Water Resistance</span>
+                                <span class="text-gray-900 font-semibold">IPX4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reviews Tab -->
+                <div x-show="activeTab === 'reviews'" class="space-y-6" id="reviews">
+                    <!-- Review Summary -->
+                    <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-8 border border-yellow-200">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="text-center md:border-r border-yellow-200">
+                                <div class="text-6xl font-bold text-gray-900 mb-3">4.8</div>
+                                <div class="flex justify-center text-yellow-400 text-2xl mb-3">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="text-lg text-gray-700 font-semibold">Berdasarkan 328 ulasan</div>
+                                <div class="text-sm text-gray-600 mt-2">97% pembeli merekomendasikan produk ini</div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-sm font-semibold w-8">5</span>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <div class="flex-1 bg-gray-200 rounded-full h-3">
+                                        <div class="bg-gradient-to-r from-yellow-400 to-orange-400 h-3 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                    <span class="text-sm text-gray-700 font-semibold w-12 text-right">279</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-sm font-semibold w-8">4</span>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <div class="flex-1 bg-gray-200 rounded-full h-3">
+                                        <div class="bg-gradient-to-r from-yellow-400 to-orange-400 h-3 rounded-full" style="width: 10%"></div>
+                                    </div>
+                                    <span class="text-sm text-gray-700 font-semibold w-12 text-right">33</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-sm font-semibold w-8">3</span>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <div class="flex-1 bg-gray-200 rounded-full h-3">
+                                        <div class="bg-gradient-to-r from-yellow-400 to-orange-400 h-3 rounded-full" style="width: 3%"></div>
+                                    </div>
+                                    <span class="text-sm text-gray-700 font-semibold w-12 text-right">10</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-sm font-semibold w-8">2</span>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <div class="flex-1 bg-gray-200 rounded-full h-3">
+                                        <div class="bg-gradient-to-r from-yellow-400 to-orange-400 h-3 rounded-full" style="width: 1%"></div>
+                                    </div>
+                                    <span class="text-sm text-gray-700 font-semibold w-12 text-right">4</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-sm font-semibold w-8">1</span>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <div class="flex-1 bg-gray-200 rounded-full h-3">
+                                        <div class="bg-gradient-to-r from-yellow-400 to-orange-400 h-3 rounded-full" style="width: 1%"></div>
+                                    </div>
+                                    <span class="text-sm text-gray-700 font-semibold w-12 text-right">2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filter Reviews -->
+                    <div class="flex flex-wrap gap-2">
+                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors">
+                            Semua (328)
+                        </button>
+                        <button class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-lg font-medium text-sm hover:bg-gray-50 transition-colors">
+                            Dengan Foto (156)
+                        </button>
+                        <button class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-lg font-medium text-sm hover:bg-gray-50 transition-colors">
+                            5 Bintang (279)
+                        </button>
+                        <button class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-lg font-medium text-sm hover:bg-gray-50 transition-colors">
+                            4 Bintang (33)
+                        </button>
+                    </div>
+
+                    <!-- Individual Reviews -->
+                    <div class="space-y-6">
+                        <!-- Review Item 1 -->
+                        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+                            <div class="flex items-start space-x-4">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="User" class="w-12 h-12 rounded-full border-2 border-gray-200">
+                                <div class="flex-1">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <div>
+                                            <div class="font-bold text-gray-900">Budi Santoso</div>
+                                            <div class="flex items-center space-x-2 mt-1">
+                                                <div class="flex text-yellow-400 text-sm">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="text-sm text-gray-500">• 3 hari yang lalu</span>
+                                            </div>
+                                        </div>
+                                        <div class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
+                                            <i class="fas fa-check-circle mr-1"></i>Verified Purchase
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-700 leading-relaxed mb-4">
+                                        Kualitas suara luar biasa! ANC-nya bekerja dengan sangat baik, benar-benar menghilangkan kebisingan di sekitar. Baterainya juga awet banget, bisa dipake seharian penuh. Desainnya premium dan nyaman dipakai lama. Worth the price!
+                                    </p>
+                                    <div class="flex space-x-2 mb-4">
+                                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200&h=200&fit=crop" alt="Review" class="w-20 h-20 rounded-lg object-cover border border-gray-200">
+                                        <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=200&h=200&fit=crop" alt="Review" class="w-20 h-20 rounded-lg object-cover border border-gray-200">
+                                        <img src="https://images.unsplash.com/photo-1545127398-14699f92334b?w=200&h=200&fit=crop" alt="Review" class="w-20 h-20 rounded-lg object-cover border border-gray-200">
+                                    </div>
+                                    <div class="flex items-center space-x-4 text-sm">
+                                        <button class="text-gray-600 hover:text-blue-600 transition-colors">
+                                            <i class="far fa-thumbs-up mr-1"></i>Membantu (45)
+                                        </button>
+                                        <button class="text-gray-600 hover:text-blue-600 transition-colors">
+                                            <i class="far fa-comment mr-1"></i>Balas
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Item 2 -->
+                        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+                            <div class="flex items-start space-x-4">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="User" class="w-12 h-12 rounded-full border-2 border-gray-200">
+                                <div class="flex-1">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <div>
+                                            <div class="font-bold text-gray-900">Siti Nurhaliza</div>
+                                            <div class="flex items-center space-x-2 mt-1">
+                                                <div class="flex text-yellow-400 text-sm">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="text-sm text-gray-500">• 1 minggu yang lalu</span>
+                                            </div>
+                                        </div>
+                                        <div class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
+                                            <i class="fas fa-check-circle mr-1"></i>Verified Purchase
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-700 leading-relaxed mb-4">
+                                        Sangat puas dengan pembelian ini! Suaranya jernih, bass-nya mantap tapi tidak berlebihan. Cocok untuk semua genre musik. Packaging-nya juga premium banget, dapat case yang bagus. Pengiriman cepat dan aman. Highly recommended! 👍
+                                    </p>
+                                    <div class="flex items-center space-x-4 text-sm">
+                                        <button class="text-gray-600 hover:text-blue-600 transition-colors">
+                                            <i class="far fa-thumbs-up mr-1"></i>Membantu (32)
+                                        </button>
+                                        <button class="text-gray-600 hover:text-blue-600 transition-colors">
+                                            <i class="far fa-comment mr-1"></i>Balas
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Item 3 -->
+                        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+                            <div class="flex items-start space-x-4">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" alt="User" class="w-12 h-12 rounded-full border-2 border-gray-200">
+                                <div class="flex-1">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <div>
+                                            <div class="font-bold text-gray-900">Ahmad Rizki</div>
+                                            <div class="flex items-center space-x-2 mt-1">
+                                                <div class="flex text-yellow-400 text-sm">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <span class="text-sm text-gray-500">• 2 minggu yang lalu</span>
+                                            </div>
+                                        </div>
+                                        <div class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
+                                            <i class="fas fa-check-circle mr-1"></i>Verified Purchase
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-700 leading-relaxed mb-4">
+                                        Produk bagus, build quality solid. ANC bekerja dengan baik untuk harga segini. Bluetooth connection stabil, bisa connect ke 2 device sekaligus. Cuma agak berat kalau dipake lama-lama, tapi overall sangat memuaskan!
+                                    </p>
+                                    <div class="flex space-x-2 mb-4">
+                                        <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=200&h=200&fit=crop" alt="Review" class="w-20 h-20 rounded-lg object-cover border border-gray-200">
+                                    </div>
+                                    <div class="flex items-center space-x-4 text-sm">
+                                        <button class="text-gray-600 hover:text-blue-600 transition-colors">
+                                            <i class="far fa-thumbs-up mr-1"></i>Membantu (28)
+                                        </button>
+                                        <button class="text-gray-600 hover:text-blue-600 transition-colors">
+                                            <i class="far fa-comment mr-1"></i>Balas
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Load More Reviews -->
+                    <div class="text-center pt-4">
+                        <button class="bg-white border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-all">
+                            Lihat Semua 328 Ulasan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white rounded-3xl my-8">
+        <div class="flex items-center justify-between mb-8">
+            <h2 class="text-3xl font-bold text-gray-900">Produk Terkait</h2>
+            <a href="../catalog.html" class="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                Lihat Semua <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
+            <!-- Product Card 1 -->
+            <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-1 group">
+                <div class="relative aspect-square bg-gray-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=400&h=400&fit=crop" alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute top-3 right-3">
+                        <button class="w-9 h-9 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-red-50 transition-colors">
+                            <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                        </button>
+                    </div>
+                    <div class="absolute top-3 left-3">
+                        <span class="bg-red-500 text-white px-2 py-1 rounded-lg text-xs font-bold">-20%</span>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-900 mb-2 line-clamp-2">Wireless Earbuds Pro</h3>
+                    <div class="flex items-center space-x-1 mb-2">
+                        <div class="flex text-yellow-400 text-xs">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-xs text-gray-600">(4.7)</span>
+                    </div>
+                    <div class="flex items-baseline space-x-2">
+                        <span class="text-lg font-bold text-gray-900">Rp 899.000</span>
+                        <span class="text-sm text-gray-500 line-through">Rp 1.099.000</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-1 group">
+                <div class="relative aspect-square bg-gray-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=400&fit=crop" alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute top-3 right-3">
+                        <button class="w-9 h-9 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-red-50 transition-colors">
+                            <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-900 mb-2 line-clamp-2">Studio Monitor Headphones</h3>
+                    <div class="flex items-center space-x-1 mb-2">
+                        <div class="flex text-yellow-400 text-xs">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="text-xs text-gray-600">(4.3)</span>
+                    </div>
+                    <div class="flex items-baseline space-x-2">
+                        <span class="text-lg font-bold text-gray-900">Rp 1.799.000</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-1 group">
+                <div class="relative aspect-square bg-gray-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400&h=400&fit=crop" alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute top-3 right-3">
+                        <button class="w-9 h-9 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-red-50 transition-colors">
+                            <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                        </button>
+                    </div>
+                    <div class="absolute top-3 left-3">
+                        <span class="bg-green-500 text-white px-2 py-1 rounded-lg text-xs font-bold">NEW</span>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-900 mb-2 line-clamp-2">Gaming Headset RGB</h3>
+                    <div class="flex items-center space-x-1 mb-2">
+                        <div class="flex text-yellow-400 text-xs">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-xs text-gray-600">(4.6)</span>
+                    </div>
+                    <div class="flex items-baseline space-x-2">
+                        <span class="text-lg font-bold text-gray-900">Rp 1.299.000</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-1 group">
+                <div class="relative aspect-square bg-gray-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1528148343865-51218c4a13e6?w=400&h=400&fit=crop" alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute top-3 right-3">
+                        <button class="w-9 h-9 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-red-50 transition-colors">
+                            <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                        </button>
+                    </div>
+                    <div class="absolute top-3 left-3">
+                        <span class="bg-red-500 text-white px-2 py-1 rounded-lg text-xs font-bold">-15%</span>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-900 mb-2 line-clamp-2">Sport Wireless Earbuds</h3>
+                    <div class="flex items-center space-x-1 mb-2">
+                        <div class="flex text-yellow-400 text-xs">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-xs text-gray-600">(4.9)</span>
+                    </div>
+                    <div class="flex items-baseline space-x-2">
+                        <span class="text-lg font-bold text-gray-900">Rp 699.000</span>
+                        <span class="text-sm text-gray-500 line-through">Rp 799.000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg"></div>
+                        <span class="text-xl font-bold">Transmart</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Toko audio premium terpercaya dengan produk berkualitas tinggi dan layanan terbaik.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-400 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pink-600 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Produk</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Headphones</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Earbuds</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Speakers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Bantuan</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Pengiriman</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Pengembalian</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Garansi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Hubungi Kami</h3>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>Jl. Sudirman No. 123, Jakarta Pusat</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-phone"></i>
+                            <span>+62 21 1234 5678</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-envelope"></i>
+                            <span>support@transmart.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 Transmart. All rights reserved. Made with <i class="fas fa-heart text-red-500"></i> in Indonesia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/product-detail.js"></script>
+</body>
+</html>

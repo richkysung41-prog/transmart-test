@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya - Transmart</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-4">
+                    <a href="../../index.html" class="flex items-center space-x-2">
+                        <div class="w-10 h-10 md:w-12 md:h-12 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shopping-bag text-xl md:text-2xl transmart-red"></i>
+                        </div>
+                        <span class="text-xl md:text-2xl font-bold transmart-red">Transmart</span>
+                    </a>
+                </div>
+                
+                <!-- Search Bar -->
+                <div class="flex-1 max-w-2xl mx-4 md:mx-8 hidden md:flex">
+                    <div class="relative w-full">
+                        <input type="text" placeholder="Cari produk..." 
+                               class="w-full px-4 py-2 md:py-3 pl-12 pr-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-transmart-red focus:border-transparent">
+                        <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                </div>
+                
+                <!-- Right Menu -->
+                <div class="flex items-center space-x-4 md:space-x-6">
+                    <button class="relative p-2 text-gray-600 hover:text-transmart-red transition-colors">
+                        <i class="fas fa-shopping-cart text-xl md:text-2xl"></i>
+                        <span class="absolute -top-2 -right-2 bg-transmart-red text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </button>
+                    <button class="p-2 text-gray-600 hover:text-transmart-red transition-colors" id="profileMenuBtn">
+                        <i class="fas fa-user text-xl md:text-2xl"></i>
+                    </button>
+                    <!-- User Dropdown Menu -->
+                    <div id="profileMenu" class="hidden absolute right-4 md:right-8 top-20 bg-white rounded-lg shadow-xl border border-gray-200 w-48 z-40">
+                        <div class="p-4 border-b border-gray-200">
+                            <p class="font-semibold text-gray-900" id="menuUserName">User Name</p>
+                            <p class="text-sm text-gray-600" id="menuUserEmail">user@email.com</p>
+                        </div>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">
+                            <i class="fas fa-user mr-2"></i> Profil Saya
+                        </a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">
+                            <i class="fas fa-heart mr-2"></i> Wishlist
+                        </a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">
+                            <i class="fas fa-box mr-2"></i> Pesanan Saya
+                        </a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">
+                            <i class="fas fa-cog mr-2"></i> Pengaturan
+                        </a>
+                        <button onclick="logout()" class="w-full text-left px-4 py-2 text-red-600 hover:bg-red-50 transition-colors border-t border-gray-200">
+                            <i class="fas fa-sign-out-alt mr-2"></i> Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b border-gray-200 sticky top-20 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div class="flex items-center space-x-2 text-sm">
+                <a href="../../index.html" class="text-transmart-red hover:underline">Beranda</a>
+                <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+                <span class="text-gray-600">Profil Saya</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <!-- Sidebar Navigation -->
+            <aside class="md:col-span-1">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden sticky top-32">
+                    <!-- User Profile Card -->
+                    <div class="bg-gradient-to-r from-transmart-red to-red-700 p-4 text-white">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-transmart-red text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold" id="sidebarUserName">Nama User</p>
+                                <p class="text-xs text-red-100">Member</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Menu -->
+                    <nav class="divide-y divide-gray-200">
+                        <a href="profile.html" class="flex items-center space-x-3 px-4 py-3 bg-red-50 text-transmart-red font-semibold border-l-4 border-transmart-red">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Profil Saya</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Alamat</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-box"></i>
+                            <span>Pesanan Saya</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-heart"></i>
+                            <span>Wishlist</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-wallet"></i>
+                            <span>Dompet Digital</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-cog"></i>
+                            <span>Pengaturan</span>
+                        </a>
+                        <button onclick="logout()" class="w-full text-left flex items-center space-x-3 px-4 py-3 text-red-600 hover:bg-red-50 transition-colors">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Logout</span>
+                        </button>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- Content Area -->
+            <div class="md:col-span-3 space-y-6">
+                <!-- Tabs -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="border-b border-gray-200 flex">
+                        <button class="flex-1 px-4 py-4 text-center font-semibold text-transmart-red border-b-2 border-transmart-red tab-btn" data-tab="info">
+                            <i class="fas fa-user mr-2"></i> Informasi Pribadi
+                        </button>
+                        <button class="flex-1 px-4 py-4 text-center font-semibold text-gray-600 hover:text-transmart-red tab-btn" data-tab="security">
+                            <i class="fas fa-lock mr-2"></i> Keamanan
+                        </button>
+                    </div>
+
+                    <!-- Tab Content: Informasi Pribadi -->
+                    <div id="info-tab" class="tab-content p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-6">Informasi Pribadi</h3>
+                        
+                        <!-- Alert Messages -->
+                        <div id="successAlert" class="hidden mb-4 p-4 bg-green-50 border border-green-200 rounded-lg flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-600 mt-0.5"></i>
+                            <div>
+                                <p class="font-semibold text-green-900">Berhasil!</p>
+                                <p id="successMessage" class="text-green-700 text-sm"></p>
+                            </div>
+                        </div>
+
+                        <div id="errorAlert" class="hidden mb-4 p-4 bg-red-50 border border-red-200 rounded-lg flex items-start space-x-3">
+                            <i class="fas fa-exclamation-circle text-red-600 mt-0.5"></i>
+                            <div>
+                                <p class="font-semibold text-red-900">Error!</p>
+                                <p id="errorMessage" class="text-red-700 text-sm"></p>
+                            </div>
+                        </div>
+
+                        <form id="profileForm" class="space-y-6">
+                            <!-- Name -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
+                                    <input type="text" id="fullName" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-transmart-red focus:border-transparent" placeholder="Nama lengkap Anda">
+                                    <p class="text-xs text-gray-500 mt-1">Gunakan nama asli Anda untuk keamanan</p>
+                                </div>
+
+                                <!-- Email -->
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-transmart-red focus:border-transparent" placeholder="email@example.com" readonly>
+                                    <p class="text-xs text-gray-500 mt-1">Email tidak dapat diubah</p>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Nomor Telepon</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-transmart-red focus:border-transparent" placeholder="08xxxxxxxxxx">
+                                    <p class="text-xs text-gray-500 mt-1">Format: 08xxxxxxxxx</p>
+                                </div>
+
+                                <!-- Gender -->
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Jenis Kelamin</label>
+                                    <select id="gender" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-transmart-red focus:border-transparent">
+                                        <option value="">Pilih Jenis Kelamin</option>
+                                        <option value="male">Laki-laki</option>
+                                        <option value="female">Perempuan</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Alamat</label>
+                                <textarea id="address" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-transmart-red focus:border-transparent" placeholder="Alamat lengkap Anda"></textarea>
+                            </div>
+
+                            <!-- Birth Date -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Tanggal Lahir</label>
+                                    <input type="date" id="birthDate" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-transmart-red focus:border-transparent">
+                                </div>
+
+                                <!-- Member Since -->
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Member Sejak</label>
+                                    <input type="text" id="memberSince" class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-gray-100" readonly>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex justify-end space-x-3 pt-6 border-t border-gray-200">
+                                <button type="reset" class="px-6 py-2 border border-gray-300 rounded-lg text-gray-700 font-semibold hover:bg-gray-50 transition-colors">
+                                    Batal
+                                </button>
+                                <button type="submit" id="saveBtn" class="px-6 py-2 bg-transmart-red text-white rounded-lg font-semibold hover:bg-red-700 transition-colors flex items-center space-x-2">
+                                    <span>Simpan Perubahan</span>
+                                    <i id="saveBtnIcon" class="fas fa-check hidden"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Tab Content: Keamanan -->
+                    <div id="security-tab" class="tab-content hidden p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-6">Pengaturan Keamanan</h3>
+
+                        <!-- Change Password Section -->
+                        <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                            <h4 class="font-semibold text-gray-900 mb-4">Ubah Password</h4>
+                            
+                            <div id="securityAlert" class="hidden mb-4 p-4 bg-green-50 border border-green-200 rounded-lg flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-green-600 mt-0.5"></i>
+                                <div>
+                                    <p class="font-semibold text-green-900">Berhasil!</p>
+                                    <p id="securityMessage" class="text-green-700 text-sm"></p>
+                                </div>
+                            </div>
+
+                            <form id="passwordForm" class="space-y-4">
+                                <!-- Current Password -->
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Password Saat Ini</label>
+                                    <div class="relative">
+                                        <input type="password" id="currentPassword" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-transmart-red focus:border-transparent" placeholder="Masukkan password Anda">
+                                        <button type="button" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600 toggle-pwd" onclick="togglePasswordField('currentPassword')">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- New Password -->
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Password Baru</label>
+                                    <div class="relative">
+                                        <input type="password" id="newPassword" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-transmart-red focus:border-transparent" placeholder="Masukkan password baru">
+                                        <button type="button" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600 toggle-pwd" onclick="togglePasswordField('newPassword')">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                    <div id="passwordStrength" class="mt-2">
+                                        <div class="flex items-center space-x-2">
+                                            <div id="strengthBar" class="flex-1 h-2 bg-gray-300 rounded-full overflow-hidden">
+                                                <div id="strengthFill" class="h-full w-0 rounded-full transition-all"></div>
+                                            </div>
+                                            <span id="strengthText" class="text-xs font-semibold text-gray-600">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Confirm Password -->
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Konfirmasi Password Baru</label>
+                                    <div class="relative">
+                                        <input type="password" id="confirmPassword" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-transmart-red focus:border-transparent" placeholder="Ulangi password baru">
+                                        <button type="button" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600 toggle-pwd" onclick="togglePasswordField('confirmPassword')">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="flex justify-end space-x-3 pt-4">
+                                    <button type="reset" class="px-6 py-2 border border-gray-300 rounded-lg text-gray-700 font-semibold hover:bg-gray-100 transition-colors">
+                                        Batal
+                                    </button>
+                                    <button type="submit" class="px-6 py-2 bg-transmart-red text-white rounded-lg font-semibold hover:bg-red-700 transition-colors">
+                                        Ubah Password
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Other Security Options -->
+                        <div class="mt-6 space-y-4">
+                            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                <div>
+                                    <p class="font-semibold text-gray-900">Verifikasi Email</p>
+                                    <p class="text-sm text-gray-600">Pastikan email Anda terverifikasi</p>
+                                </div>
+                                <button class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
+                                    <i class="fas fa-check text-green-600 mr-2"></i>Terverifikasi
+                                </button>
+                            </div>
+
+                            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                <div>
+                                    <p class="font-semibold text-gray-900">Verifikasi Nomor Telepon</p>
+                                    <p class="text-sm text-gray-600">Amankan akun Anda dengan nomor telepon</p>
+                                </div>
+                                <button class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
+                                    <i class="fas fa-check text-green-600 mr-2"></i>Terverifikasi
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Account Statistics -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <i class="fas fa-box text-4xl text-transmart-red mb-4"></i>
+                        <p class="text-3xl font-bold text-gray-900">0</p>
+                        <p class="text-gray-600 text-sm">Pesanan Selesai</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <i class="fas fa-heart text-4xl text-transmart-red mb-4"></i>
+                        <p class="text-3xl font-bold text-gray-900">0</p>
+                        <p class="text-gray-600 text-sm">Item Wishlist</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <i class="fas fa-star text-4xl text-yellow-400 mb-4"></i>
+                        <p class="text-3xl font-bold text-gray-900">0</p>
+                        <p class="text-gray-600 text-sm">Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-12 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-semibold mb-4">Tentang Transmart</h3>
+                    <p class="text-gray-400 text-sm">Belanja online terpercaya dengan jaminan kualitas dan harga terbaik.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Layanan Pelanggan</h3>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li><a href="#" class="hover:text-white transition">Bantuan</a></li>
+                        <li><a href="#" class="hover:text-white transition">Hubungi Kami</a></li>
+                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Kebijakan</h3>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li><a href="#" class="hover:text-white transition">Privasi</a></li>
+                        <li><a href="#" class="hover:text-white transition">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="hover:text-white transition">Pengembalian</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Ikuti Kami</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 Transmart. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/auth.js"></script>
+    <script>
+        // Initialize profile page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadUserProfile();
+            setupEventListeners();
+        });
+
+        function loadUserProfile() {
+            // Get user from localStorage
+            const userId = localStorage.getItem('user_id');
+            const userName = localStorage.getItem('user_name');
+            const userEmail = localStorage.getItem('user_email');
+            const userPhone = localStorage.getItem('user_phone');
+            const userRole = localStorage.getItem('user_role');
+
+            // Check if user is logged in
+            if (!userId) {
+                window.location.href = '../auth/login.html';
+                return;
+            }
+
+            // Update UI with user info
+            document.getElementById('fullName').value = userName || '';
+            document.getElementById('email').value = userEmail || '';
+            document.getElementById('phone').value = userPhone || '';
+            document.getElementById('sidebarUserName').textContent = userName || 'User';
+            document.getElementById('menuUserName').textContent = userName || 'User';
+            document.getElementById('menuUserEmail').textContent = userEmail || '';
+
+            // Format member since date
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('memberSince').value = now.toLocaleDateString('id-ID', options);
+        }
+
+        function setupEventListeners() {
+            // Tab switching
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabName = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons
+                    document.querySelectorAll('.tab-btn').forEach(b => {
+                        b.classList.remove('text-transmart-red', 'border-b-2', 'border-transmart-red');
+                        b.classList.add('text-gray-600');
+                    });
+                    
+                    // Hide all tabs
+                    document.querySelectorAll('.tab-content').forEach(tab => {
+                        tab.classList.add('hidden');
+                    });
+                    
+                    // Activate clicked button
+                    this.classList.remove('text-gray-600');
+                    this.classList.add('text-transmart-red', 'border-b-2', 'border-transmart-red');
+                    
+                    // Show selected tab
+                    document.getElementById(tabName + '-tab').classList.remove('hidden');
+                });
+            });
+
+            // Profile form submit
+            document.getElementById('profileForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                await saveProfile();
+            });
+
+            // Password form submit
+            document.getElementById('passwordForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                await changePassword();
+            });
+
+            // Password strength indicator
+            document.getElementById('newPassword').addEventListener('input', function() {
+                checkPasswordStrength(this.value);
+            });
+
+            // Profile menu toggle
+            document.getElementById('profileMenuBtn').addEventListener('click', function() {
+                const menu = document.getElementById('profileMenu');
+                menu.classList.toggle('hidden');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const menu = document.getElementById('profileMenu');
+                const btn = document.getElementById('profileMenuBtn');
+                if (!menu.contains(event.target) && !btn.contains(event.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+        }
+
+        async function saveProfile() {
+            const fullName = document.getElementById('fullName').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const address = document.getElementById('address').value.trim();
+            const gender = document.getElementById('gender').value;
+            const birthDate = document.getElementById('birthDate').value;
+            const saveBtn = document.getElementById('saveBtn');
+
+            // Validation
+            if (!fullName || fullName.length < 3) {
+                showError('profileForm', 'Nama minimal 3 karakter');
+                return;
+            }
+
+            if (phone && !/^08\d{7,11}$/.test(phone)) {
+                showError('profileForm', 'Format nomor telepon tidak valid');
+                return;
+            }
+
+            // Show loading
+            saveBtn.disabled = true;
+            saveBtn.innerHTML = '<span>Menyimpan...</span><i class="fas fa-spinner fa-spin"></i>';
+
+            try {
+                const response = await fetch('../../api/users.php', {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: fullName,
+                        phone: phone,
+                        address: address
+                    })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    showSuccess('profileForm', 'Profil berhasil diperbarui!');
+                    localStorage.setItem('user_name', fullName);
+                    localStorage.setItem('user_phone', phone);
+                    document.getElementById('sidebarUserName').textContent = fullName;
+                    document.getElementById('menuUserName').textContent = fullName;
+                } else {
+                    showError('profileForm', result.error || 'Gagal menyimpan profil');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showError('profileForm', 'Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                saveBtn.disabled = false;
+                saveBtn.innerHTML = '<span>Simpan Perubahan</span><i id="saveBtnIcon" class="fas fa-check hidden"></i>';
+            }
+        }
+
+        async function changePassword() {
+            const currentPassword = document.getElementById('currentPassword').value;
+            const newPassword = document.getElementById('newPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            // Validation
+            if (!currentPassword || !newPassword || !confirmPassword) {
+                showError('passwordForm', 'Semua field harus diisi');
+                return;
+            }
+
+            if (newPassword.length < 6) {
+                showError('passwordForm', 'Password minimal 6 karakter');
+                return;
+            }
+
+            if (newPassword !== confirmPassword) {
+                showError('passwordForm', 'Password tidak sesuai');
+                return;
+            }
+
+            if (currentPassword === newPassword) {
+                showError('passwordForm', 'Password baru harus berbeda dengan password saat ini');
+                return;
+            }
+
+            // Here you would typically send this to an API
+            console.log('Changing password...');
+            
+            showSuccessSecurity('Password berhasil diubah!');
+            document.getElementById('passwordForm').reset();
+            document.getElementById('strengthFill').style.width = '0%';
+            document.getElementById('strengthText').textContent = '-';
+        }
+
+        function checkPasswordStrength(password) {
+            const strengthFill = document.getElementById('strengthFill');
+            const strengthText = document.getElementById('strengthText');
+            
+            let strength = 0;
+            const checks = {
+                length: password.length >= 8,
+                lowercase: /[a-z]/.test(password),
+                uppercase: /[A-Z]/.test(password),
+                number: /\d/.test(password),
+                special: /[@$!%*?&]/.test(password)
+            };
+
+            Object.values(checks).forEach(check => {
+                if (check) strength++;
+            });
+
+            const colors = ['bg-red-500', 'bg-orange-500', 'bg-yellow-500', 'bg-blue-500', 'bg-green-500'];
+            const texts = ['Sangat Lemah', 'Lemah', 'Sedang', 'Kuat', 'Sangat Kuat'];
+            const percentages = [20, 40, 60, 80, 100];
+
+            strengthFill.className = `h-full rounded-full transition-all ${colors[strength - 1] || 'bg-gray-300'}`;
+            strengthFill.style.width = `${percentages[strength - 1] || 0}%`;
+            strengthText.textContent = texts[strength - 1] || '-';
+        }
+
+        function togglePasswordField(fieldId) {
+            const field = document.getElementById(fieldId);
+            field.type = field.type === 'password' ? 'text' : 'password';
+        }
+
+        function showError(formId, message) {
+            const alert = document.getElementById('errorAlert');
+            document.getElementById('errorMessage').textContent = message;
+            alert.classList.remove('hidden');
+            setTimeout(() => alert.classList.add('hidden'), 4000);
+        }
+
+        function showSuccess(formId, message) {
+            const alert = document.getElementById('successAlert');
+            document.getElementById('successMessage').textContent = message;
+            alert.classList.remove('hidden');
+            setTimeout(() => alert.classList.add('hidden'), 4000);
+        }
+
+        function showSuccessSecurity(message) {
+            const alert = document.getElementById('securityAlert');
+            document.getElementById('securityMessage').textContent = message;
+            alert.classList.remove('hidden');
+            setTimeout(() => alert.classList.add('hidden'), 4000);
+        }
+
+        function logout() {
+            localStorage.clear();
+            window.location.href = '../auth/login.html';
+        }
+    </script>
+</body>
+</html>

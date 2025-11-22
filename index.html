@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmart - Belanja Online Mudah & Hemat</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.2.4/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.2.4/swiper-bundle.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.14.1/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 md:w-12 md:h-12 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-shopping-bag text-xl md:text-2xl transmart-red"></i>
+                    </div>
+                    <span class="text-xl md:text-2xl font-bold transmart-red">Transmart</span>
+                </div>
+                
+                <!-- Search Bar -->
+                <div class="flex-1 max-w-2xl mx-4 md:mx-8">
+                    <div class="relative">
+                        <input type="text" placeholder="Cari produk, merek, atau kategori..." 
+                               class="w-full px-4 py-2 md:py-3 pl-12 pr-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-transmart-red focus:border-transparent">
+                        <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                </div>
+                
+                <!-- Right Menu -->
+                <div class="flex items-center space-x-4 md:space-x-6">
+                    <button class="relative p-2 text-gray-600 hover:text-transmart-red transition-colors">
+                        <i class="fas fa-shopping-cart text-xl md:text-2xl"></i>
+                        <span class="absolute -top-2 -right-2 bg-transmart-red text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                    </button>
+                    <button class="hidden md:flex items-center space-x-2 bg-transmart-red text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                        <i class="fas fa-user"></i>
+                        <span>Masuk</span>
+                    </button>
+                    <button class="md:hidden p-2 text-gray-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Navigation -->
+    <nav class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center space-x-6 md:space-x-8 py-3 overflow-x-auto">
+                <a href="#" class="flex items-center space-x-2 text-gray-700 hover:text-transmart-red whitespace-nowrap transition-colors">
+                    <i class="fas fa-apple-alt text-green-500"></i>
+                    <span class="text-sm md:text-base">Buah & Sayur</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2 text-gray-700 hover:text-transmart-red whitespace-nowrap transition-colors">
+                    <i class="fas fa-bread-slice text-orange-500"></i>
+                    <span class="text-sm md:text-base">Makanan</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2 text-gray-700 hover:text-transmart-red whitespace-nowrap transition-colors">
+                    <i class="fas fa-wine-bottle text-blue-500"></i>
+                    <span class="text-sm md:text-base">Minuman</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2 text-gray-700 hover:text-transmart-red whitespace-nowrap transition-colors">
+                    <i class="fas fa-home text-purple-500"></i>
+                    <span class="text-sm md:text-base">Rumah Tangga</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2 text-gray-700 hover:text-transmart-red whitespace-nowrap transition-colors">
+                    <i class="fas fa-laptop text-gray-600"></i>
+                    <span class="text-sm md:text-base">Elektronik</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2 text-gray-700 hover:text-transmart-red whitespace-nowrap transition-colors">
+                    <i class="fas fa-heart text-pink-500"></i>
+                    <span class="text-sm md:text-base">Kesehatan</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8">
+        <!-- Hero Banner Slider -->
+        <section class="mb-8 md:mb-12">
+            <div class="swiper hero-swiper rounded-xl overflow-hidden shadow-lg">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="relative h-48 md:h-80 bg-gradient-to-r from-red-600 to-red-700">
+                            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+                                <span class="text-gray-600 text-lg">Banner Promo 1</span>
+                            </div>
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center">
+                                <div class="max-w-lg mx-8 text-white">
+                                    <h2 class="text-2xl md:text-4xl font-bold mb-2 md:mb-4">Diskon Hingga 50%</h2>
+                                    <p class="text-sm md:text-lg mb-4 md:mb-6">Untuk semua produk makanan segar dan kebutuhan harian</p>
+                                    <button class="bg-white text-transmart-red px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                                        Belanja Sekarang
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="relative h-48 md:h-80 bg-gradient-to-r from-blue-600 to-blue-700">
+                            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+                                <span class="text-gray-600 text-lg">Banner Promo 2</span>
+                            </div>
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center">
+                                <div class="max-w-lg mx-8 text-white">
+                                    <h2 class="text-2xl md:text-4xl font-bold mb-2 md:mb-4">Gratis Ongkir</h2>
+                                    <p class="text-sm md:text-lg mb-4 md:mb-6">Untuk pembelian minimal Rp 100.000</p>
+                                    <button class="bg-white text-blue-600 px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                                        Lihat Produk
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="relative h-48 md:h-80 bg-gradient-to-r from-green-600 to-green-700">
+                            <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+                                <span class="text-gray-600 text-lg">Banner Promo 3</span>
+                            </div>
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center">
+                                <div class="max-w-lg mx-8 text-white">
+                                    <h2 class="text-2xl md:text-4xl font-bold mb-2 md:mb-4">Produk Organik</h2>
+                                    <p class="text-sm md:text-lg mb-4 md:mb-6">Buah dan sayur segar langsung dari petani</p>
+                                    <button class="bg-white text-green-600 px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                                        Jelajahi
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Quick Categories -->
+        <section class="mb-8 md:mb-12">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4 md:mb-6">Kategori Populer</h2>
+            <div class="grid grid-cols-3 md:grid-cols-6 gap-4 md:gap-6">
+                <div class="bg-white rounded-xl p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3">
+                        <i class="fas fa-apple-alt text-green-600 text-lg md:text-2xl"></i>
+                    </div>
+                    <p class="text-xs md:text-sm font-medium text-gray-700">Buah Segar</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3">
+                        <i class="fas fa-bread-slice text-orange-600 text-lg md:text-2xl"></i>
+                    </div>
+                    <p class="text-xs md:text-sm font-medium text-gray-700">Roti & Kue</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3">
+                        <i class="fas fa-wine-bottle text-blue-600 text-lg md:text-2xl"></i>
+                    </div>
+                    <p class="text-xs md:text-sm font-medium text-gray-700">Minuman</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3">
+                        <i class="fas fa-home text-purple-600 text-lg md:text-2xl"></i>
+                    </div>
+                    <p class="text-xs md:text-sm font-medium text-gray-700">Rumah Tangga</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3">
+                        <i class="fas fa-laptop text-gray-600 text-lg md:text-2xl"></i>
+                    </div>
+                    <p class="text-xs md:text-sm font-medium text-gray-700">Elektronik</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 md:p-6 text-center shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3">
+                        <i class="fas fa-heart text-pink-600 text-lg md:text-2xl"></i>
+                    </div>
+                    <p class="text-xs md:text-sm font-medium text-gray-700">Kesehatan</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flash Sale -->
+        <section class="mb-8 md:mb-12">
+            <div class="bg-gradient-to-r from-red-600 to-red-700 rounded-xl p-4 md:p-6 text-white mb-4 md:mb-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-bold mb-1 md:mb-2">Flash Sale</h2>
+                        <p class="text-sm md:text-base opacity-90">Berakhir dalam</p>
+                    </div>
+                    <div class="flex space-x-2" x-data="{ hours: 2, minutes: 45, seconds: 30 }">
+                        <div class="bg-white bg-opacity-20 rounded-lg px-2 md:px-3 py-1 md:py-2 text-center">
+                            <div class="text-lg md:text-xl font-bold" x-text="hours.toString().padStart(2, '0')">02</div>
+                            <div class="text-xs">Jam</div>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg px-2 md:px-3 py-1 md:py-2 text-center">
+                            <div class="text-lg md:text-xl font-bold" x-text="minutes.toString().padStart(2, '0')">45</div>
+                            <div class="text-xs">Menit</div>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg px-2 md:px-3 py-1 md:py-2 text-center">
+                            <div class="text-lg md:text-xl font-bold" x-text="seconds.toString().padStart(2, '0')">30</div>
+                            <div class="text-xs">Detik</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
+                <div class="bg-white rounded-xl p-3 md:p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="relative mb-2 md:mb-3">
+                        <div class="w-full h-24 md:h-32 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500 text-xs">Produk 1</span>
+                        </div>
+                        <div class="absolute top-2 left-2 bg-transmart-red text-white text-xs px-2 py-1 rounded-full">-50%</div>
+                    </div>
+                    <h3 class="text-xs md:text-sm font-medium text-gray-800 mb-1 line-clamp-2">Apel Fuji Premium 1kg</h3>
+                    <div class="flex items-center space-x-1 mb-1">
+                        <span class="text-sm md:text-base font-bold transmart-red">Rp 25.000</span>
+                        <span class="text-xs text-gray-500 line-through">Rp 50.000</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                            <span class="text-xs text-gray-600">4.8</span>
+                        </div>
+                        <span class="text-xs text-gray-500">Terjual 150</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-3 md:p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="relative mb-2 md:mb-3">
+                        <div class="w-full h-24 md:h-32 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500 text-xs">Produk 2</span>
+                        </div>
+                        <div class="absolute top-2 left-2 bg-transmart-red text-white text-xs px-2 py-1 rounded-full">-30%</div>
+                    </div>
+                    <h3 class="text-xs md:text-sm font-medium text-gray-800 mb-1 line-clamp-2">Roti Tawar Gandum</h3>
+                    <div class="flex items-center space-x-1 mb-1">
+                        <span class="text-sm md:text-base font-bold transmart-red">Rp 14.000</span>
+                        <span class="text-xs text-gray-500 line-through">Rp 20.000</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                            <span class="text-xs text-gray-600">4.6</span>
+                        </div>
+                        <span class="text-xs text-gray-500">Terjual 89</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-3 md:p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="relative mb-2 md:mb-3">
+                        <div class="w-full h-24 md:h-32 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500 text-xs">Produk 3</span>
+                        </div>
+                        <div class="absolute top-2 left-2 bg-transmart-red text-white text-xs px-2 py-1 rounded-full">-40%</div>
+                    </div>
+                    <h3 class="text-xs md:text-sm font-medium text-gray-800 mb-1 line-clamp-2">Susu UHT Coklat 1L</h3>
+                    <div class="flex items-center space-x-1 mb-1">
+                        <span class="text-sm md:text-base font-bold transmart-red">Rp 18.000</span>
+                        <span class="text-xs text-gray-500 line-through">Rp 30.000</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                            <span class="text-xs text-gray-600">4.9</span>
+                        </div>
+                        <span class="text-xs text-gray-500">Terjual 203</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-3 md:p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="relative mb-2 md:mb-3">
+                        <div class="w-full h-24 md:h-32 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500 text-xs">Produk 4</span>
+                        </div>
+                        <div class="absolute top-2 left-2 bg-transmart-red text-white text-xs px-2 py-1 rounded-full">-25%</div>
+                    </div>
+                    <h3 class="text-xs md:text-sm font-medium text-gray-800 mb-1 line-clamp-2">Deterjen Bubuk 1kg</h3>
+                    <div class="flex items-center space-x-1 mb-1">
+                        <span class="text-sm md:text-base font-bold transmart-red">Rp 22.500</span>
+                        <span class="text-xs text-gray-500 line-through">Rp 30.000</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                            <span class="text-xs text-gray-600">4.7</span>
+                        </div>
+                        <span class="text-xs text-gray-500">Terjual 67</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-3 md:p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="relative mb-2 md:mb-3">
+                        <div class="w-full h-24 md:h-32 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500 text-xs">Produk 5</span>
+                        </div>
+                        <div class="absolute top-2 left-2 bg-transmart-red text-white text-xs px-2 py-1 rounded-full">-35%</div>
+                    </div>
+                    <h3 class="text-xs md:text-sm font-medium text-gray-800 mb-1 line-clamp-2">Minyak Goreng 2L</h3>
+                    <div class="flex items-center space-x-1 mb-1">
+                        <span class="text-sm md:text-base font-bold transmart-red">Rp 32.500</span>
+                        <span class="text-xs text-gray-500 line-through">Rp 50.000</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                            <span class="text-xs text-gray-600">4.5</span>
+                        </div>
+                        <span class="text-xs text-gray-500">Terjual 124</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-3 md:p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="relative mb-2 md:mb-3">
+                        <div class="w-full h-24 md:h-32 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500 text-xs">Produk 6</span>
+                        </div>
+                        <div class="absolute top-2 left-2 bg-transmart-red text-white text-xs px-2 py-1 rounded-full">-45%</div>
+                    </div>
+                    <h3 class="text-xs md:text-sm font-medium text-gray-800 mb-1 line-clamp-2">Beras Premium 5kg</h3>
+                    <div class="flex items-center space-x-1 mb-1">
+                        <span class="text-sm md:text-base font-bold transmart-red">Rp 55.000</span>
+                        <span class="text-xs text-gray-500 line-through">Rp 100.000</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                            <span class="text-xs text-gray-600">4.8</span>
+                        </div>
+                        <span class="text-xs text-gray-500">Terjual 95</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommended Products -->
+        <section class="mb-8 md:mb-12">
+            <div class="flex items-center justify-between mb-4 md:mb-6">
+                <h2 class="text-xl md:text-2xl font-bold text-gray-800">Rekomendasi Untuk Anda</h2>
+                <button class="text-transmart-red hover:text-red-700 font-medium text-sm md:text-base">Lihat Semua</button>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-4">
+                <div class="bg-white rounded-xl p-3 md:p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="relative mb-2 md:mb-3">
+                        <div class="w-full h-32 md:h-40 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500 text-xs">Produk A</span>
+                        </div>
+                        <button class="absolute top-2 right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-50">
+                            <i class="far fa-heart text-gray-400 hover:text-transmart-red"></i>
+                        </button>
+                    </div>
+                    <h3 class="text-sm md:text-base font-medium text-gray-800 mb-1 md:mb-2 line-clamp-2">Pisang Cavendish 1kg</h3>
+                    <div class="flex items-center space-x-1 mb-1 md:mb-2">
+                        <span class="text-base md:text-lg font-bold transmart-red">Rp 15.000</span>
+                    </div>
+                    <div class="flex items-center justify-between mb-2 md:mb-3">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                            <span class="text-xs text-gray-600">4.7</span>
+                        </div>
+                        <span class="text-xs text-gray-500">Terjual 234</span>
+                    </div>
+                    <button class="w-full bg-transmart-red text-white py-2 rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">
+                        + Keranjang
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-xl p-3 md:p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="relative mb-2 md:mb-3">
+                        <div class="w-full h-32 md:h-40 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500 text-xs">Produk B</span>
+                        </div>
+                        <button class="absolute top-2 right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-50">
+                            <i class="far fa-heart text-gray-400 hover:text-transmart-red"></i>
+                        </button>
+                    </div>
+                    <h3 class="text-sm md:text-base font-medium text-gray-800 mb-1 md:mb-2 line-clamp-2">Ayam Potong Segar 1kg</h3>
+                    <div class="flex items-center space-x-1 mb-1 md:mb-2">
+                        <span class="text-base md:text-lg font-bold transmart-red">Rp 35.000</span>
+                    </div>
+                    <div class="flex items-center justify-between mb-2 md:mb-3">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                            <span class="text-xs text-gray-600">4.9</span>
+                        </div>
+                        <span class="text-xs text-gray-500">Terjual 156</span>
+                    </div>
+                    <button class="w-full bg-transmart-red text-white py-2 rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">
+                        + Keranjang
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-xl p-3 md:p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="relative mb-2 md:mb-3">
+                        <div class="w-full h-32 md:h-40 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500 text-xs">Produk C</span>
+                        </div>
+                        <button class="absolute top-2 right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-50">
+                            <i class="far fa-heart text-gray-400 hover:text-transmart-red"></i>
+                        </button>
+                    </div>
+                    <h3 class="text-sm md:text-base font-medium text-gray-800 mb-1 md:mb-2 line-clamp-2">Telur Ayam Kampung 1kg</h3>
+                    <div class="flex items-center space-x-1 mb-1 md:mb-2">
+                        <span class="text-base md:text-lg font-bold transmart-red">Rp 28.000</span>
+                    </div>
+                    <div class="flex items-center justify-between mb-2 md:mb-3">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                            <span class="text-xs text-gray-600">4.8</span>
+                        </div>
+                        <span class="text-xs text-gray-500">Terjual 89</span>
+                    </div>
+                    <button class="w-full bg-transmart-red text-white py-2 rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">
+                        + Keranjang
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-xl p-3 md:p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="relative mb-2 md:mb-3">
+                        <div class="w-full h-32 md:h-40 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500 text-xs">Produk D</span>
+                        </div>
+                        <button class="absolute top-2 right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-50">
+                            <i class="far fa-heart text-gray-400 hover:text-transmart-red"></i>
+                        </button>
+                    </div>
+                    <h3 class="text-sm md:text-base font-medium text-gray-800 mb-1 md:mb-2 line-clamp-2">Air Mineral 600ml (24 pcs)</h3>
+                    <div class="flex items-center space-x-1 mb-1 md:mb-2">
+                        <span class="text-base md:text-lg font-bold transmart-red">Rp 45.000</span>
+                    </div>
+                    <div class="flex items-center justify-between mb-2 md:mb-3">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                            <span class="text-xs text-gray-600">4.6</span>
+                        </div>
+                        <span class="text-xs text-gray-500">Terjual 312</span>
+                    </div>
+                    <button class="w-full bg-transmart-red text-white py-2 rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">
+                        + Keranjang
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-xl p-3 md:p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="relative mb-2 md:mb-3">
+                        <div class="w-full h-32 md:h-40 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500 text-xs">Produk E</span>
+                        </div>
+                        <button class="absolute top-2 right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-50">
+                            <i class="far fa-heart text-gray-400 hover:text-transmart-red"></i>
+                        </button>
+                    </div>
+                    <h3 class="text-sm md:text-base font-medium text-gray-800 mb-1 md:mb-2 line-clamp-2">Sabun Mandi Cair 500ml</h3>
+                    <div class="flex items-center space-x-1 mb-1 md:mb-2">
+                        <span class="text-base md:text-lg font-bold transmart-red">Rp 12.500</span>
+                    </div>
+                    <div class="flex items-center justify-between mb-2 md:mb-3">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                            <span class="text-xs text-gray-600">4.7</span>
+                        </div>
+                        <span class="text-xs text-gray-500">Terjual 178</span>
+                    </div>
+                    <button class="w-full bg-transmart-red text-white py-2 rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">
+                        + Keranjang
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shopping-bag text-lg transmart-red"></i>
+                        </div>
+                        <span class="text-xl font-bold text-red-500">Transmart</span>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">Platform belanja online terpercaya untuk kebutuhan sehari-hari dengan kualitas terbaik dan harga terjangkau.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4">Layanan Pelanggan</h3>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Pusat Bantuan</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Cara Berbelanja</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Kebijakan Pengembalian</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4">Tentang Transmart</h3>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Karir</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4">Metode Pembayaran</h3>
+                    <div class="grid grid-cols-3 gap-2 mb-4">
+                        <div class="bg-white rounded p-2 flex items-center justify-center">
+                            <span class="text-xs font-bold text-gray-800">VISA</span>
+                        </div>
+                        <div class="bg-white rounded p-2 flex items-center justify-center">
+                            <span class="text-xs font-bold text-gray-800">MC</span>
+                        </div>
+                        <div class="bg-white rounded p-2 flex items-center justify-center">
+                            <span class="text-xs font-bold text-gray-800">OVO</span>
+                        </div>
+                        <div class="bg-white rounded p-2 flex items-center justify-center">
+                            <span class="text-xs font-bold text-gray-800">DANA</span>
+                        </div>
+                        <div class="bg-white rounded p-2 flex items-center justify-center">
+                            <span class="text-xs font-bold text-gray-800">GOPAY</span>
+                        </div>
+                        <div class="bg-white rounded p-2 flex items-center justify-center">
+                            <span class="text-xs font-bold text-gray-800">BCA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 md:pt-8 mt-6 md:mt-8">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <p class="text-sm text-gray-400 mb-4 md:mb-0">© 2024 Transmart. Semua hak cipta dilindungi.</p>
+                    <div class="flex items-center space-x-4 text-sm text-gray-400">
+                        <a href="#" class="hover:text-white transition-colors">Syarat & Ketentuan</a>
+                        <span>|</span>
+                        <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50">
+        <div class="flex items-center justify-around py-2">
+            <a href="#" class="flex flex-col items-center space-y-1 p-2 text-transmart-red">
+                <i class="fas fa-home text-lg"></i>
+                <span class="text-xs">Beranda</span>
+            </a>
+            <a href="#" class="flex flex-col items-center space-y-1 p-2 text-gray-600">
+                <i class="fas fa-th-large text-lg"></i>
+                <span class="text-xs">Kategori</span>
+            </a>
+            <a href="#" class="flex flex-col items-center space-y-1 p-2 text-gray-600">
+                <i class="fas fa-search text-lg"></i>
+                <span class="text-xs">Cari</span>
+            </a>
+            <a href="#" class="flex flex-col items-center space-y-1 p-2 text-gray-600 relative">
+                <i class="fas fa-shopping-cart text-lg"></i>
+                <span class="text-xs">Keranjang</span>
+                <span class="absolute -top-1 -right-1 bg-transmart-red text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">3</span>
+            </a>
+            <a href="#" class="flex flex-col items-center space-y-1 p-2 text-gray-600">
+                <i class="fas fa-user text-lg"></i>
+                <span class="text-xs">Akun</span>
+            </a>
+        </div>
+    </nav>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
