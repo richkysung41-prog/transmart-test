@@ -403,3 +403,291 @@ Stack trace:
 [22-Nov-2025 01:17:30 UTC] handleGetCart called with user_id: 39
 [22-Nov-2025 01:17:30 UTC] Session ID: u9ab9h4h8kbqv9i84nhd556if3
 [22-Nov-2025 01:17:30 UTC] Cart items returned: [{"id":18,"user_id":39,"product_id":14,"quantity":1,"added_at":"2025-11-22 01:08:18","name":"Sepatu Sneakers Sport","price":"679000.00","image":"sneakers.jpg","stock":18},{"id":19,"user_id":39,"product_id":26,"quantity":1,"added_at":"2025-11-22 01:13:48","name":"Tas Ransel Travel Premium","price":"549000.00","image":"backpack.jpg","stock":12}]
+[24-Nov-2025 07:40:36 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:40:36 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:40:36 UTC] Cart items returned: []
+[24-Nov-2025 07:40:42 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:40:42 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:40:42 UTC] Cart items returned: []
+[24-Nov-2025 07:44:40 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:44:40 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:44:40 UTC] Cart items returned: []
+[24-Nov-2025 07:44:40 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:44:40 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:44:40 UTC] Cart items returned: []
+[24-Nov-2025 07:44:41 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:44:41 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:44:41 UTC] Cart items returned: []
+[24-Nov-2025 07:44:51 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:44:51 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:44:51 UTC] Cart items returned: []
+[24-Nov-2025 07:45:51 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:45:51 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:45:51 UTC] Cart items returned: []
+[24-Nov-2025 07:45:52 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:45:52 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:45:52 UTC] Cart items returned: []
+[24-Nov-2025 07:45:53 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:45:53 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:45:53 UTC] Cart items returned: []
+[24-Nov-2025 07:46:42 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:46:42 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:46:42 UTC] Cart items returned: []
+[24-Nov-2025 07:46:43 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:46:43 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:46:43 UTC] Cart items returned: []
+[24-Nov-2025 07:46:44 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:46:44 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:46:44 UTC] Cart items returned: []
+[24-Nov-2025 07:46:55 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:46:55 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:46:55 UTC] Cart items returned: []
+[24-Nov-2025 07:46:56 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:46:56 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:46:56 UTC] Cart items returned: []
+[24-Nov-2025 07:46:57 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:46:57 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:46:57 UTC] Cart items returned: []
+[24-Nov-2025 07:47:01 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:47:01 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:47:01 UTC] Cart items returned: []
+[24-Nov-2025 07:47:14 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:47:14 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:47:14 UTC] Cart items returned: []
+[24-Nov-2025 07:47:15 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:47:15 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:47:15 UTC] Cart items returned: []
+[24-Nov-2025 07:49:41 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:49:41 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:49:41 UTC] Cart items returned: []
+[24-Nov-2025 07:49:53 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:49:53 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:49:53 UTC] Cart items returned: []
+[24-Nov-2025 07:49:55 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:49:55 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:49:55 UTC] Cart items returned: []
+[24-Nov-2025 07:50:20 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:50:20 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:50:20 UTC] Cart items returned: []
+[24-Nov-2025 07:50:21 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:50:21 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:50:21 UTC] Cart items returned: []
+[24-Nov-2025 07:50:21 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:50:21 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:50:21 UTC] Cart items returned: []
+[24-Nov-2025 07:50:33 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:50:33 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:50:33 UTC] Cart items returned: []
+[24-Nov-2025 07:50:34 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:50:34 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:50:34 UTC] Cart items returned: []
+[24-Nov-2025 07:50:41 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:50:41 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:50:41 UTC] Cart items returned: []
+[24-Nov-2025 07:51:13 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:51:13 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:51:13 UTC] Cart items returned: []
+[24-Nov-2025 07:51:13 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:51:13 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:51:13 UTC] Cart items returned: []
+[24-Nov-2025 07:51:21 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:51:21 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:51:21 UTC] Cart items returned: []
+[24-Nov-2025 07:51:21 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:51:21 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:51:21 UTC] Cart items returned: []
+[24-Nov-2025 07:51:22 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:51:22 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:51:22 UTC] Cart items returned: []
+[24-Nov-2025 07:51:32 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:51:32 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:51:32 UTC] Cart items returned: []
+[24-Nov-2025 07:51:33 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:51:33 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:51:33 UTC] Cart items returned: []
+[24-Nov-2025 07:51:34 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:51:34 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:51:34 UTC] Cart items returned: []
+[24-Nov-2025 07:51:35 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:51:35 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:51:35 UTC] Cart items returned: []
+[24-Nov-2025 07:51:47 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:51:47 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:51:47 UTC] Cart items returned: []
+[24-Nov-2025 07:51:48 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:51:48 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:51:48 UTC] Cart items returned: []
+[24-Nov-2025 07:51:49 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:51:49 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:51:49 UTC] Cart items returned: []
+[24-Nov-2025 07:51:49 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:51:49 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:51:49 UTC] Cart items returned: []
+[24-Nov-2025 07:52:11 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:52:11 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:52:11 UTC] Cart items returned: []
+[24-Nov-2025 07:52:12 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:52:12 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:52:12 UTC] Cart items returned: []
+[24-Nov-2025 07:52:13 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:52:13 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:52:13 UTC] Cart items returned: []
+[24-Nov-2025 07:52:13 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:52:13 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:52:13 UTC] Cart items returned: []
+[24-Nov-2025 07:52:17 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:52:17 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:52:17 UTC] Cart items returned: []
+[24-Nov-2025 07:52:18 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:52:18 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:52:18 UTC] Cart items returned: []
+[24-Nov-2025 07:52:20 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:52:20 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:52:20 UTC] Cart items returned: []
+[24-Nov-2025 07:54:28 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:54:28 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:54:28 UTC] Cart items returned: []
+[24-Nov-2025 07:54:28 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:54:28 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:54:28 UTC] Cart items returned: []
+[24-Nov-2025 07:54:52 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:54:53 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:54:53 UTC] Cart items returned: []
+[24-Nov-2025 07:56:07 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:56:07 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:56:07 UTC] Cart items returned: []
+[24-Nov-2025 07:56:09 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:56:09 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:56:09 UTC] Cart items returned: []
+[24-Nov-2025 07:56:10 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:56:10 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:56:10 UTC] Cart items returned: []
+[24-Nov-2025 07:56:11 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:56:11 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:56:11 UTC] Cart items returned: []
+[24-Nov-2025 07:56:12 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:56:12 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:56:12 UTC] Cart items returned: []
+[24-Nov-2025 07:56:16 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:56:16 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:56:16 UTC] Cart items returned: []
+[24-Nov-2025 07:56:17 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:56:17 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:56:17 UTC] Cart items returned: []
+[24-Nov-2025 07:59:12 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:59:12 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:59:12 UTC] Cart items returned: []
+[24-Nov-2025 07:59:18 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:59:18 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:59:18 UTC] Cart items returned: []
+[24-Nov-2025 07:59:33 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 07:59:33 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 07:59:33 UTC] Cart items returned: []
+[24-Nov-2025 08:01:43 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:01:43 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:01:43 UTC] Cart items returned: []
+[24-Nov-2025 08:01:55 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:01:55 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:01:55 UTC] Cart items returned: []
+[24-Nov-2025 08:01:59 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:01:59 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:01:59 UTC] Cart items returned: []
+[24-Nov-2025 08:02:18 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:02:18 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:02:18 UTC] Cart items returned: []
+[24-Nov-2025 08:02:42 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:02:42 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:02:42 UTC] Cart items returned: []
+[24-Nov-2025 08:02:44 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:02:44 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:02:44 UTC] Cart items returned: []
+[24-Nov-2025 08:03:34 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:03:34 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:03:34 UTC] Cart items returned: []
+[24-Nov-2025 08:03:37 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:03:37 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:03:37 UTC] Cart items returned: []
+[24-Nov-2025 08:03:45 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:03:45 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:03:45 UTC] Cart items returned: []
+[24-Nov-2025 08:06:54 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:06:54 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:06:54 UTC] Cart items returned: []
+[24-Nov-2025 08:06:59 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:06:59 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:06:59 UTC] Cart items returned: []
+[24-Nov-2025 08:07:19 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:07:19 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:07:19 UTC] Cart items returned: []
+[24-Nov-2025 08:07:25 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:07:25 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:07:25 UTC] Cart items returned: []
+[24-Nov-2025 08:07:50 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:07:50 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:07:50 UTC] Cart items returned: []
+[24-Nov-2025 08:08:25 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:08:25 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:08:25 UTC] Cart items returned: []
+[24-Nov-2025 08:08:50 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:08:50 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:08:50 UTC] Cart items returned: []
+[24-Nov-2025 08:09:15 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:09:15 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:09:15 UTC] Cart items returned: []
+[24-Nov-2025 08:11:01 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:11:01 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:11:01 UTC] Cart items returned: []
+[24-Nov-2025 08:11:02 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:11:02 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:11:02 UTC] Cart items returned: []
+[24-Nov-2025 08:16:28 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:16:28 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:16:28 UTC] Cart items returned: []
+[24-Nov-2025 08:16:42 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:16:42 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:16:42 UTC] Cart items returned: []
+[24-Nov-2025 08:16:43 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:16:43 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:16:43 UTC] Cart items returned: []
+[24-Nov-2025 08:16:43 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:16:43 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:16:43 UTC] Cart items returned: []
+[24-Nov-2025 08:16:49 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:16:49 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:16:49 UTC] Cart items returned: []
+[24-Nov-2025 08:16:50 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:16:50 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:16:50 UTC] Cart items returned: []
+[24-Nov-2025 08:17:05 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:17:05 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:17:05 UTC] Cart items returned: []
+[24-Nov-2025 08:17:06 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:17:06 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:17:06 UTC] Cart items returned: []
+[24-Nov-2025 08:17:25 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:17:25 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:17:25 UTC] Cart items returned: []
+[24-Nov-2025 08:17:25 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:17:25 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:17:25 UTC] Cart items returned: []
+[24-Nov-2025 08:18:05 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:18:05 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:18:05 UTC] Cart items returned: []
+[24-Nov-2025 08:18:12 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:18:12 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:18:12 UTC] Cart items returned: []
+[24-Nov-2025 08:18:20 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:18:20 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:18:20 UTC] Cart items returned: []
+[24-Nov-2025 08:19:29 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:19:29 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:19:29 UTC] Cart items returned: []
+[24-Nov-2025 08:19:48 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:19:48 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:19:48 UTC] Cart items returned: []
+[24-Nov-2025 08:19:51 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:19:51 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:19:51 UTC] Cart items returned: []
+[24-Nov-2025 08:19:59 UTC] handleGetCart called with user_id: 2
+[24-Nov-2025 08:19:59 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
+[24-Nov-2025 08:19:59 UTC] Cart items returned: []
