@@ -691,3 +691,42 @@ Stack trace:
 [24-Nov-2025 08:19:59 UTC] handleGetCart called with user_id: 2
 [24-Nov-2025 08:19:59 UTC] Session ID: br2uagv5cufptnsjc4hgjjorpd
 [24-Nov-2025 08:19:59 UTC] Cart items returned: []
+[25-Nov-2025 09:23:14 UTC] Connection error: SQLSTATE[HY000] [2002] Connection refused
+[25-Nov-2025 09:23:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/dobot/dobot-project/transmart-test/config/database.php:36
+Stack trace:
+#0 /home/dobot/dobot-project/transmart-test/config/database.php(53): executeQuery()
+#1 /home/dobot/dobot-project/transmart-test/api/homepage.php(87): getAllResults()
+#2 /home/dobot/dobot-project/transmart-test/api/homepage.php(38): getHomepageData()
+#3 {main}
+  thrown in /home/dobot/dobot-project/transmart-test/config/database.php on line 36
+[25-Nov-2025 09:23:16 UTC] Connection error: SQLSTATE[HY000] [2002] Connection refused
+[25-Nov-2025 09:23:16 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/dobot/dobot-project/transmart-test/config/database.php:36
+Stack trace:
+#0 /home/dobot/dobot-project/transmart-test/config/database.php(53): executeQuery()
+#1 /home/dobot/dobot-project/transmart-test/api/homepage.php(87): getAllResults()
+#2 /home/dobot/dobot-project/transmart-test/api/homepage.php(38): getHomepageData()
+#3 {main}
+  thrown in /home/dobot/dobot-project/transmart-test/config/database.php on line 36
+[25-Nov-2025 09:23:20 UTC] Connection error: SQLSTATE[HY000] [2002] Connection refused
+[25-Nov-2025 09:23:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/dobot/dobot-project/transmart-test/config/database.php:36
+Stack trace:
+#0 /home/dobot/dobot-project/transmart-test/config/database.php(53): executeQuery()
+#1 /home/dobot/dobot-project/transmart-test/api/homepage.php(87): getAllResults()
+#2 /home/dobot/dobot-project/transmart-test/api/homepage.php(38): getHomepageData()
+#3 {main}
+  thrown in /home/dobot/dobot-project/transmart-test/config/database.php on line 36
+[25-Nov-2025 10:11:55 UTC] Connection error: SQLSTATE[HY000] [2002] Connection refused
+[25-Nov-2025 10:11:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/dobot/dobot-project/transmart-test/config/database.php:36
+Stack trace:
+#0 /home/dobot/dobot-project/transmart-test/config/database.php(45): executeQuery()
+#1 /home/dobot/dobot-project/transmart-test/config/functions.php(63): getSingleResult()
+#2 /home/dobot/dobot-project/transmart-test/api/auth.php(49): TransmartFunctions::loginUser()
+#3 /home/dobot/dobot-project/transmart-test/api/auth.php(25): handleLogin()
+#4 {main}
+  thrown in /home/dobot/dobot-project/transmart-test/config/database.php on line 36
+[25-Nov-2025 10:12:18 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:12:18 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:12:18 UTC] Cart items returned: []
+[25-Nov-2025 10:12:58 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:12:58 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:12:58 UTC] Cart items returned: []
