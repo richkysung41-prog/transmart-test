@@ -12,7 +12,7 @@ function checkAdminAuth() {
     const currentUser = JSON.parse(localStorage.getItem('transmart_current_user') || '{}');
     
     if (!currentUser.id || currentUser.role !== 'admin') {
-        window.location.href = '../pages/auth/login.html';
+        window.location.href = '../auth/login.html';
         return;
     }
     
@@ -331,7 +331,7 @@ function showNotification(message, type = 'success') {
 
 function logout() {
     localStorage.removeItem('transmart_current_user');
-    window.location.href = '../pages/auth/login.html';
+    window.location.href = '../auth/login.html';
 }
 
 // Make functions available globally

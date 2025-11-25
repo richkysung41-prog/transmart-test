@@ -730,3 +730,123 @@ Stack trace:
 [25-Nov-2025 10:12:58 UTC] handleGetCart called with user_id: 2
 [25-Nov-2025 10:12:58 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
 [25-Nov-2025 10:12:58 UTC] Cart items returned: []
+[25-Nov-2025 10:15:20 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:15:20 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:15:20 UTC] Cart items returned: []
+[25-Nov-2025 10:26:49 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:26:49 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:26:49 UTC] Cart items returned: []
+[25-Nov-2025 10:26:51 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:26:51 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:26:51 UTC] Cart items returned: []
+[25-Nov-2025 10:26:53 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:26:53 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:26:53 UTC] Cart items returned: []
+[25-Nov-2025 10:27:36 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:27:36 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:27:36 UTC] Cart items returned: []
+[25-Nov-2025 10:27:52 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:27:52 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:27:52 UTC] Cart items returned: []
+[25-Nov-2025 10:27:58 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:27:58 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:27:58 UTC] Cart items returned: []
+[25-Nov-2025 10:28:08 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:28:08 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:28:08 UTC] Cart items returned: []
+[25-Nov-2025 10:28:14 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:28:14 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:28:14 UTC] Cart items returned: [{"id":20,"user_id":2,"product_id":32,"quantity":1,"added_at":"2025-11-25 10:28:12","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[25-Nov-2025 10:28:17 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:28:17 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:28:17 UTC] Cart items returned: [{"id":20,"user_id":2,"product_id":32,"quantity":1,"added_at":"2025-11-25 10:28:12","name":"Wireless Headphone Premium","price":"899000.00","image":"headphone.jpg","stock":15}]
+[25-Nov-2025 10:28:37 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:28:37 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:28:37 UTC] Cart items returned: []
+[25-Nov-2025 10:28:39 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:28:39 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:28:39 UTC] Cart items returned: []
+[25-Nov-2025 10:28:47 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:28:47 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:28:47 UTC] Cart items returned: []
+[25-Nov-2025 10:28:52 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:28:52 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:28:52 UTC] Cart items returned: []
+[25-Nov-2025 10:29:07 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:29:07 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:29:07 UTC] Cart items returned: []
+[25-Nov-2025 10:29:18 UTC] handleGetCart called with user_id: 2
+[25-Nov-2025 10:29:18 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:29:18 UTC] Cart items returned: []
+[25-Nov-2025 10:29:37 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:29:37 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:29:37 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:29:46 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:29:46 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:29:46 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:29:54 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:29:54 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:29:54 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:29:57 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:29:57 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:29:57 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:30:12 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:30:12 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:30:12 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:34:17 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:34:17 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:34:17 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:34:19 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:34:19 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:34:19 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:34:23 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:34:23 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:34:23 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:34:27 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:34:27 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:34:27 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:34:31 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:34:31 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:34:31 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:34:52 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:34:52 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:34:52 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:34:59 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:34:59 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:34:59 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:35:15 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:35:15 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:35:15 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:35:25 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:35:25 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:35:25 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:35:35 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:35:35 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:35:35 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:35:40 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:35:40 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:35:40 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:36:23 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:36:23 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:36:23 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:36:32 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:36:32 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:36:32 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:37:25 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:37:25 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:37:25 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:37:30 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:37:30 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:37:30 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:39:07 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:39:07 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:39:07 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:39:19 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:39:19 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:39:19 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:39:20 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:39:20 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:39:20 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]
+[25-Nov-2025 10:39:24 UTC] handleGetCart called with user_id: 1
+[25-Nov-2025 10:39:24 UTC] Session ID: tbbjv27ign69akpg9c4shfinmd
+[25-Nov-2025 10:39:24 UTC] Cart items returned: [{"id":11,"user_id":1,"product_id":3,"quantity":2,"added_at":"2025-11-19 08:17:47","name":"Kacamata Hitam Fashion","price":"349000.00","image":"sunglasses.jpg","stock":22}]

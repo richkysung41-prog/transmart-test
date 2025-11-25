@@ -139,7 +139,17 @@ async function submitLogin(email, password, remember) {
             throw new Error(data.error || 'Login gagal');
         }
 
-        // Success
+        // Success - simpan user data dengan format konsisten untuk admin dan customer
+        const userData = {
+            id: data.user.id,
+            name: data.user.name,
+            email: data.user.email,
+            phone: data.user.phone,
+            role: data.user.role || 'customer'
+        };
+        
+        // Simpan untuk keperluan umum
+        localStorage.setItem('transmart_current_user', JSON.stringify(userData));
         localStorage.setItem('user_id', data.user.id);
         localStorage.setItem('user_name', data.user.name);
         localStorage.setItem('user_email', data.user.email);
@@ -152,9 +162,13 @@ async function submitLogin(email, password, remember) {
 
         showNotification('Login berhasil! Mengalihkan...', 'success');
         
-        // Redirect
+        // Redirect ke dashboard jika admin, ke homepage jika customer
         setTimeout(() => {
-            window.location.href = '../../index.html';
+            if (userData.role === 'admin') {
+                window.location.href = '../../pages/admin/dashboard.html';
+            } else {
+                window.location.href = '../../index.html';
+            }
         }, 1500);
 
     } catch (error) {
